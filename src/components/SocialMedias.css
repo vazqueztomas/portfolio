@@ -1,0 +1,103 @@
+#youreinterested {
+    background: url("../assets/images/OLA1.svg");
+    background-size: cover;
+    /* margin-bottom: 20px; */
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    width: 100%vh;
+    margin: 0;
+    height: 350px;
+}
+
+#socialmedias {
+    background: url("../assets/images/ola2.svg");
+    background-size: contain;
+    /* margin-bottom: 20px; */
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%vh;
+    height: 400px;
+    margin: 0;
+}
+
+#btn-github:hover{
+    color: white;
+    border-color: white;
+    background-color: var(--chakra-colors-orange-400);
+    transition: all .2s ease-in-out;
+}
+
+#btn-linkedin:hover{
+    color: white;
+    border-color: white;
+    background-color: var(--chakra-colors-orange-400);
+    transition: all .2s ease-in-out;
+}
+
+#btn-mail:hover{
+    color: white;
+    border-color: white;
+    background-color: var(--chakra-colors-orange-400);
+    transition: all .2s ease-in-out;
+}
+
+#btn-cafecito:hover{
+    color: white;
+    border-color: white;
+    background-color: var(--chakra-colors-orange-400);
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+@media only screen and (max-width:468px) {
+    #youreinterested {
+        background: url("../assets/images/OLA1.svg");
+        background-size: cover;
+        /* margin-bottom: 20px; */
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        width: 100%vh;
+        margin: 0;
+        height: 300px;
+    }
+    
+    #socialmedias {
+        background: url("../assets/images/ola2.svg");
+        background-size: cover;
+        /* margin-bottom: 20px; */
+        background-repeat: no-repeat;
+        background-position:23% 0%;
+        width: 100%vh;
+        height:300px;
+        margin: 0;
+    }
+    
+}
+
+
+@media only screen and (min-width:468px) and (max-width:768px) {
+    #youreinterested {
+        background: url("../assets/images/OLA1.svg");
+        background-size: cover;
+        /* margin-bottom: 20px; */
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        width: 100%vh;
+        margin: 0;
+        height: 300px;
+    }
+    
+    #socialmedias {
+        background: url("../assets/images/ola2.svg");
+        background-size: cover;
+        /* margin-bottom: 20px; */
+        background-repeat: no-repeat;
+        background-position:23% 0%;
+        width: 100%vh;
+        height:300px;
+        margin: 0;
+    }
+    
+}

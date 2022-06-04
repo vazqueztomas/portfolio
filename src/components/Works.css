@@ -1,0 +1,6 @@
+#btn-github-seemore:hover{
+    color: white;
+    background-color: var(--chakra-colors-orange-400);
+    transition: all .2s ease-in-out;
+}
+

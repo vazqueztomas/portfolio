@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150">
+	<title>labarberiadetoto</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 129px;fill: #000000;font-weight: 400;font-family: "Loaded", "Loaded" } 
+		.t1 { font-size: 129px;fill: #de8461;font-weight: 400;font-family: "Loaded", "Loaded" } 
+	</style>
+	<text id="T" style="transform: matrix(1,0,0,1,7,32)" >
+		<tspan x="22.7" y="85.7" class="t0">T
+</tspan>
+	</text>
+	<text id="T" style="transform: matrix(1,0,0,1,7,28)" >
+		<tspan x="22.7" y="85.7" class="t1">T
+</tspan>
+	</text>
+</svg>

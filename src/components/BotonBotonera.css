@@ -1,0 +1,9 @@
+.btn-botonera:hover{
+    text-decoration: 3px underline var(--chakra-colors-orange-400);
+    transition: .4s ease-in-out;
+}
+
+.btn-botonera{
+    text-decoration: 3px underline transparent;
+}
+

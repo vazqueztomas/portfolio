@@ -9,6 +9,7 @@ import Hero from './components/Hero'
 import Descripcion from './components/Descripcion';
 import Works from './components/Works';
 import SocialMedias from './components/SocialMedias';
+import StacksTecno from './components/StacksTecno';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Descripcion title = "Sobre mi"></Descripcion>
       <Works/>
       <SocialMedias/>
-
+      <StacksTecno/>
       
     </ChakraProvider>
   );

@@ -1,17 +1,13 @@
 import { Stack, Text, Image, ColorModeProvider } from '@chakra-ui/react';
 import AboutMe from '../assets/images/aboutme.jpg';
 import React from 'react';
-import ComputerIcon from '@mui/icons-material/Computer';
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import DoneIcon from '@mui/icons-material/Done';
 import TitleRemarcado from './TitleRemarcado';
 
 const Descripcion = (props) => {
-  let color = '#ff9b5c';
 
   
   return (
-    <Stack my={8}>
+    <Stack my={8} id = "aboutme">
       <Stack textAlign={'center'}>
         <TitleRemarcado contenido={props.title}></TitleRemarcado>
       </Stack>
@@ -21,19 +17,9 @@ const Descripcion = (props) => {
         justifyContent={['center', 'space-evenly']}
         my={10}
       >
-        <Stack direction={'column'}>
-          <Stack direction={'row'} id="task-list">
-            <ComputerIcon color="pink" />
-            <Text>Desarrollador frontend</Text>
-          </Stack>
-          <Stack direction={'row'} id="task-list">
-            <DoneIcon />
-            <Text>Estudiante Sistemas de Información</Text>
-          </Stack>
-          <Stack direction={'row'} id="task-list">
-            <CurrencyBitcoinIcon />
-            <Text>Interés en cryptomonedas</Text>
-          </Stack>
+        <Stack direction={'column'} maxW={"75ch"} textAlign={"center"} mx={6}>
+         
+          <Text fontSize={"lg"}>Hola! Soy Tomás Vazquez. Me dedico actualmente a desarrollar aplicaciones en el lado del frontend, utilizando tecnologías como React. Soy un apasionado por éste mundo, me encanta tener que aprender todos los días algo nuevo. Además, me gusta mucho el mundo de las cryptomonedas y estoy enfocándome en aprender a desarrollar web3. </Text>
         </Stack>
 
         <Stack>

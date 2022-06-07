@@ -29,7 +29,7 @@ const Works = props => {
       >
         <WorkCard
           image={BillabongSVG}
-          link={'https://billabong.com'}
+          link={'https://billabongcopy.web.app'}
         ></WorkCard>
         <WorkCard
           image={LaBarbDeTotoSVG}

@@ -14,7 +14,7 @@ const SocialMedias = () => {
             Charlemos!
           </Text>
           <Text fontSize={'lg'} mt={20}>
-            Simpre estoy abierto a realizar nuevas conexiones! Te dejo mis redes
+            Siempre estoy abierto a realizar nuevas conexiones! Te dejo mis redes
             sociales{' '}
           </Text>
         </Stack>

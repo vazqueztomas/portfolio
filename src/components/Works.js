@@ -24,7 +24,7 @@ const Works = props => {
         <Text fontSize={['20px', '20px', '30px']}>Más de 1 año de</Text>
         <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
-<<<<<<< HEAD
+
       <Stack alignItems={"center"}>
         <Stack
           direction={['column', 'row', 'row']}
@@ -65,26 +65,7 @@ const Works = props => {
             link={'https://benescuela.web.app'}
           ></WorkCard>
         </Stack>
-=======
-      <Stack
-        direction={['column', 'row', 'row']}
-        alignItems={'center'}
-        justifyContent={'center'}
-        spacing={6}
-      >
-        <WorkCard
-          image={BillabongSVG}
-          link={'https://billabongcopy.web.app'}
-        ></WorkCard>
-        <WorkCard
-          image={LaBarbDeTotoSVG}
-          link={'https://labarberiadetoto.web.app'}
-        ></WorkCard>
-        <WorkCard
-          image={BarberiaSVG}
-          link={'https://benescuela.web.app'}
-        ></WorkCard>
->>>>>>> fc827b96d6439af422008940a64ccdd79a86ff8b
+        
       </Stack>
       <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
         <a href="https://github.com/vazquezcabj21" target="_blank">

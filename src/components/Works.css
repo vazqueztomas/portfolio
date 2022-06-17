@@ -4,3 +4,8 @@
     transition: all .2s ease-in-out;
 }
 
+
+#works {
+    display: flex;
+    justify-content: center;
+}

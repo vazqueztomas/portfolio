@@ -6,11 +6,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import BillabongSVG from '../assets/images/billabong.svg';
 import BarberiaSVG from '../assets/images/barberia.svg';
 import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
+import RuinsSVG from '../assets/images/tipos-de-computadoras.svg';
+import LyricsSVG from '../assets/images/lyrics.svg'
+
 import './Works.css';
 // import MouseIcon from '@mui/icons-material/Mouse';
 const Works = props => {
   return (
-    <Stack my={20} id = "works">
+    <Stack my={20} id="works">
       <Stack
         textAlign={'center'}
         direction={['column', 'column', 'row']}
@@ -21,27 +24,49 @@ const Works = props => {
         <Text fontSize={['20px', '20px', '30px']}>Más de 1 año de</Text>
         <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
-      <Stack
-        direction={['column', 'row', 'row']}
-        alignItems={'center'}
-        justifyContent={'center'}
-        spacing={6}
-      >
-        <WorkCard
-          image={BillabongSVG}
-          link={'https://billabong.com'}
-        ></WorkCard>
-        <WorkCard
-          image={LaBarbDeTotoSVG}
-          link={'https://labarberiadetoto.web.app'}
-        ></WorkCard>
-        <WorkCard
-          image={BarberiaSVG}
-          link={'https://benescuela.web.app'}
-        ></WorkCard>
+      <Stack alignItems={"center"}>
+        <Stack
+          direction={['column', 'row', 'row']}
+          alignItems={'center'}
+          justifyContent={'center'}
+          spacing={6}
+        >
+          <WorkCard
+            image={BillabongSVG}
+            link={'https://billabongcopy.web.app/'}
+          ></WorkCard>
+          <WorkCard
+            image={LaBarbDeTotoSVG}
+            link={'https://labarberiadetoto.web.app'}
+          ></WorkCard>
+          <WorkCard
+            image={BarberiaSVG}
+            link={'https://benescuela.web.app'}
+          ></WorkCard>
+        </Stack>
+
+        <Stack
+          direction={['column', 'row', 'row']}
+          alignItems={'center'}
+          justifyContent={'center'}
+          spacing={6}
+        >
+          <WorkCard
+            image={RuinsSVG}
+            link={'https://ruinsdesign.web.app'}
+          ></WorkCard>
+          <WorkCard
+            image={LyricsSVG}
+            link={'https://homelyricstudio.web.app/'}
+          ></WorkCard>
+          <WorkCard
+            image={BarberiaSVG}
+            link={'https://benescuela.web.app'}
+          ></WorkCard>
+        </Stack>
       </Stack>
       <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
-        <a href = "https://github.com/vazquezcabj21" target="_blank">
+        <a href="https://github.com/vazquezcabj21" target="_blank">
           <Button
             colorScheme={'orange'}
             borderRadius={'20px 20px'}
@@ -51,7 +76,7 @@ const Works = props => {
             {' '}
             <GitHubIcon /> Mirá más en mi Github{' '}
           </Button>
-          </a>
+        </a>
       </Stack>
     </Stack>
   );

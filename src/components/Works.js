@@ -8,6 +8,7 @@ import BarberiaSVG from '../assets/images/barberia.svg';
 import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
 import RuinsSVG from '../assets/images/tipos-de-computadoras.svg';
 import LyricsSVG from '../assets/images/lyrics.svg'
+import DevaluargSVG from '../assets/images/devaluarg.svg'
 
 import './Works.css';
 // import MouseIcon from '@mui/icons-material/Mouse';
@@ -61,8 +62,8 @@ const Works = props => {
             link={'https://homelyricstudio.web.app/'}
           ></WorkCard>
           <WorkCard
-            image={BarberiaSVG}
-            link={'https://benescuela.web.app'}
+            image={DevaluargSVG}
+            link={'https://devaluarg.web.app'}
           ></WorkCard>
         </Stack>
         

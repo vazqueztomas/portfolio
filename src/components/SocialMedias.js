@@ -25,7 +25,7 @@ const SocialMedias = () => {
           spacing={8}
           justifyContent={'center'}
         >
-          <Link href="https://github.com/vazquezcabj21" isExternal>
+          <Link href="https://github.com/vazqueztomas" isExternal>
             <GitHubIcon
               id="btn-github"
               sx={{ fontSize: 45 }}
@@ -38,7 +38,7 @@ const SocialMedias = () => {
             />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/tom%C3%A1s-vazquez-88003a206/"
+            href="https://www.linkedin.com/in/vazqueztomas21/"
             isExternal
           >
             <LinkedInIcon

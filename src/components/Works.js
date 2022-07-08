@@ -1,4 +1,4 @@
-import { Text, Stack, Link, Button } from '@chakra-ui/react';
+import { Text, Stack, Link, Button, WrapItem, Wrap } from '@chakra-ui/react';
 import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import WorkCard from './WorkCard';
@@ -7,8 +7,8 @@ import BillabongSVG from '../assets/images/billabong.svg';
 import BarberiaSVG from '../assets/images/barberia.svg';
 import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
 import RuinsSVG from '../assets/images/tipos-de-computadoras.svg';
-import LyricsSVG from '../assets/images/lyrics.svg'
-import DevaluargSVG from '../assets/images/devaluarg.svg'
+import LyricsSVG from '../assets/images/lyrics.svg';
+import DevaluargSVG from '../assets/images/devaluarg.svg';
 
 import './Works.css';
 // import MouseIcon from '@mui/icons-material/Mouse';
@@ -26,50 +26,46 @@ const Works = props => {
         <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
 
-      <Stack alignItems={"center"}>
-        <Stack
-          direction={['column', 'row', 'row']}
-          alignItems={'center'}
-          justifyContent={'center'}
-          spacing={6}
-        >
+      <Wrap justify={"center"} align={"center"} spacing={6}>
+        <WrapItem>
           <WorkCard
             image={BillabongSVG}
             link={'https://billabongcopy.web.app/'}
           ></WorkCard>
+        </WrapItem>
+        <WrapItem>
           <WorkCard
             image={LaBarbDeTotoSVG}
             link={'https://labarberiadetoto.web.app'}
           ></WorkCard>
+        </WrapItem>
+        <WrapItem>
           <WorkCard
             image={BarberiaSVG}
             link={'https://benescuela.web.app'}
           ></WorkCard>
-        </Stack>
-
-        <Stack
-          direction={['column', 'row', 'row']}
-          alignItems={'center'}
-          justifyContent={'center'}
-          spacing={6}
-        >
+        </WrapItem>
+        <WrapItem>
           <WorkCard
             image={RuinsSVG}
             link={'https://ruinsdesign.web.app'}
           ></WorkCard>
+        </WrapItem>
+        <WrapItem>
           <WorkCard
             image={LyricsSVG}
             link={'https://homelyricstudio.web.app/'}
           ></WorkCard>
+        </WrapItem>
+        <WrapItem>
           <WorkCard
             image={DevaluargSVG}
             link={'https://devaluarg.web.app'}
           ></WorkCard>
-        </Stack>
-        
-      </Stack>
+        </WrapItem>
+      </Wrap> 
       <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
-        <a href="https://github.com/vazquezcabj21" target="_blank">
+        <a href="https://github.com/vazqueztomas" target="_blank">
           <Button
             colorScheme={'orange'}
             borderRadius={'20px 20px'}

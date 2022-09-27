@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Stack, Text, Box } from '@chakra-ui/react';
+import { Image, Stack } from '@chakra-ui/react';
 import './Hero.css';
 import Avatar from '../assets/images/profile.jpg';
 import TitleRemarcado from './TitleRemarcado';
@@ -9,18 +9,17 @@ const Hero = () => {
     <Stack
       id="hero"
       fontWeight={'bolder'}
-      direction={['column', 'row','row']}
+      direction={['column', 'row', 'row']}
       alignItems={['center', 'center']}
-      justifyContent={['center','center','space-evenly']}
+      justifyContent={['center', 'center', 'space-evenly']}
       mb={8}
     >
-      <Stack id = 'hero-text' justifyContent={['center']} alignItems={"center"}>
+      <Stack id="hero-text" justifyContent={['center']} alignItems={'center'}>
         <p>Hola! Mi nombre es</p>
-        <TitleRemarcado contenido = "Tomás Vazquez"/>
+        <TitleRemarcado contenido="Tomás Vazquez" />
         <h2>Soy React Developer</h2>
       </Stack>
-        <Image src={Avatar} borderRadius={8} w={['200px','300px']}></Image>
-
+      <Image src={Avatar} borderRadius={8} w={['200px', '300px']}></Image>
     </Stack>
   );
 };

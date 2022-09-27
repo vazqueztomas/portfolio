@@ -8,17 +8,17 @@ const StacksTecno = () => {
     'CSS3',
     'JavaScript',
     'Reactjs',
-    'Bootstrap',
     'ChakraUI',
     'Sass',
+    'Styled Components',
   ];
-  let backend_techs = ['Solidity (para web3)', 'Python', 'Nodejs', 'C#', 'Go'];
+  let backend_techs = ['Solidity (para web3)', 'Python', 'Nodejs', 'Express'];
   let color = '#ff9b5c';
   return (
     <Stack
       direction={['column', 'row']}
-      justifyContent={["center","center",'space-evenly']}
-      alignItems={["center","center",'start']}
+      justifyContent={['center', 'center', 'space-evenly']}
+      alignItems={['center', 'center', 'start']}
     >
       <Stack
         direction={'column'}
@@ -26,7 +26,7 @@ const StacksTecno = () => {
         alignItems={'center'}
         justifyContent={'center'}
         p={10}
-        w={['100%','100%','33%']}
+        w={['100%', '100%', '33%']}
       >
         <ArchitectureIcon
           color={'orange'}
@@ -37,7 +37,7 @@ const StacksTecno = () => {
             Frontend
           </Text>
           <Text fontSize={'md'}>
-            Programo hace más de dos años, y la parte del cliente es la que mas
+            Programo hace más de tres años, y la parte del cliente es la que mas
             me atrae.
           </Text>
           <Text fontSize={'lg'} color={color}>
@@ -54,7 +54,7 @@ const StacksTecno = () => {
         alignItems={'center'}
         justifyContent={'center'}
         p={10}
-        w={['100%','100%','33%']}
+        w={['100%', '100%', '33%']}
       >
         <CloudQueueIcon
           color={'orange'}
@@ -69,7 +69,7 @@ const StacksTecno = () => {
             contraparte.
           </Text>
           <Text fontSize={'lg'} color={color}>
-            ¿Que lenguajes quiero aprender?
+            Lenguajes que he utilizado y tengo noción de ellos:
           </Text>
           {backend_techs.map(e => (
             <Text fontSize={'md'}>{e}</Text>

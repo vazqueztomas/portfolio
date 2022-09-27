@@ -1,4 +1,4 @@
-import { Text, Stack, Link, Button, WrapItem, Wrap } from '@chakra-ui/react';
+import { Text, Stack, Button, WrapItem, Wrap } from '@chakra-ui/react';
 import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import WorkCard from './WorkCard';
@@ -22,11 +22,11 @@ const Works = props => {
         justifyContent={'center'}
         my={20}
       >
-        <Text fontSize={['20px', '20px', '30px']}>Más de 1 año de</Text>
+        <Text fontSize={['20px', '20px', '30px']}>Más de 2 años de</Text>
         <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
 
-      <Wrap justify={"center"} align={"center"} spacing={6}>
+      <Wrap justify={'center'} align={'center'} spacing={6}>
         <WrapItem>
           <WorkCard
             image={BillabongSVG}
@@ -63,9 +63,13 @@ const Works = props => {
             link={'https://devaluarg.web.app'}
           ></WorkCard>
         </WrapItem>
-      </Wrap> 
+      </Wrap>
       <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
-        <a href="https://github.com/vazqueztomas" target="_blank">
+        <a
+          href="https://github.com/vazqueztomas"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Button
             colorScheme={'orange'}
             borderRadius={'20px 20px'}

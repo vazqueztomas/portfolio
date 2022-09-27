@@ -26,7 +26,7 @@ const Works = props => {
         <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
 
-      <Wrap justify={'center'} align={'center'} spacing={6}>
+      <Wrap justify={'center'} align={'center'} spacing={6} p={2}>
         <WrapItem>
           <WorkCard
             image={BillabongSVG}

@@ -9,10 +9,37 @@ import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
 import RuinsSVG from '../assets/images/tipos-de-computadoras.svg';
 import LyricsSVG from '../assets/images/lyrics.svg';
 import DevaluargSVG from '../assets/images/devaluarg.svg';
-
 import './Works.css';
-// import MouseIcon from '@mui/icons-material/Mouse';
 const Works = props => {
+  const proyects = [
+    {
+      link: 'https://billabongcopy.web.app/',
+      name: 'Billabong Page',
+      src: BillabongSVG,
+    },
+    {
+      link: 'https://labarberiadetoto.web.app',
+      name: 'La barberia de Toto',
+      src: LaBarbDeTotoSVG,
+    },
+    {
+      link: 'https://benescuela.web.app',
+      name: 'Escuela Barberia',
+      src: BarberiaSVG,
+    },
+    {
+      link: 'https://ruinsdesign.web.app',
+      name: 'Ruins Design',
+      src: RuinsSVG,
+    },
+    {
+      link: 'https://homelyricstudio.web.app/',
+      name: 'Home Lyrics Studio',
+      src: LyricsSVG,
+    },
+    { link: 'https://devaluarg.web.app', name: 'Devaluarg', src: DevaluargSVG },
+  ];
+
   return (
     <Stack my={20} id="works">
       <Stack
@@ -27,42 +54,13 @@ const Works = props => {
       </Stack>
 
       <Wrap justify={'center'} align={'center'} spacing={6} p={2}>
-        <WrapItem>
-          <WorkCard
-            image={BillabongSVG}
-            link={'https://billabongcopy.web.app/'}
-          ></WorkCard>
-        </WrapItem>
-        <WrapItem>
-          <WorkCard
-            image={LaBarbDeTotoSVG}
-            link={'https://labarberiadetoto.web.app'}
-          ></WorkCard>
-        </WrapItem>
-        <WrapItem>
-          <WorkCard
-            image={BarberiaSVG}
-            link={'https://benescuela.web.app'}
-          ></WorkCard>
-        </WrapItem>
-        <WrapItem>
-          <WorkCard
-            image={RuinsSVG}
-            link={'https://ruinsdesign.web.app'}
-          ></WorkCard>
-        </WrapItem>
-        <WrapItem>
-          <WorkCard
-            image={LyricsSVG}
-            link={'https://homelyricstudio.web.app/'}
-          ></WorkCard>
-        </WrapItem>
-        <WrapItem>
-          <WorkCard
-            image={DevaluargSVG}
-            link={'https://devaluarg.web.app'}
-          ></WorkCard>
-        </WrapItem>
+        {proyects.map(proyect => {
+          return (
+            <WrapItem>
+              <WorkCard image={proyect.src} link={proyect.link}></WorkCard>
+            </WrapItem>
+          );
+        })}
       </Wrap>
       <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
         <a

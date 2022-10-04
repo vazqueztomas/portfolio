@@ -27,18 +27,12 @@
 }
 
 @media only screen and (max-width:400px) {
-    /* #hero-text {
-        margin-top: 55px;
-    } */
-
     #hero-text p {
         font-size: 20px;
     }
-
     #hero-text span {
         font-size: 40px;
     }
-
 }
 
 @media only screen and (min-width:401px) and (max-width:736px) {
@@ -48,12 +42,10 @@
     #hero-text span{
         font-size: 40px;
     }
-
 }
 
 #hero {
     background-size: cover;
-    /* margin-bottom: 20px; */
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-image: url(../assets/images/wave.svg);

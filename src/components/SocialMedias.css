@@ -1,7 +1,6 @@
 #youreinterested {
     background: url("../assets/images/OLA1.svg");
     background-size: cover;
-    /* margin-bottom: 20px; */
     background-repeat: no-repeat;
     background-position: 0% 100%;
     width: 100%vh;
@@ -12,7 +11,6 @@
 #socialmedias {
     background: url("../assets/images/ola2.svg");
     background-size: cover;
-    /* margin-bottom: 20px; */
     background-repeat: no-repeat;
     background-position: 0% 100%;
     width: 100%;
@@ -48,14 +46,10 @@
     transition: all .2s ease-in-out;
 }
 
-
-
-
 @media only screen and (max-width:468px) {
     #youreinterested {
         background: url("../assets/images/OLA1.svg");
         background-size: cover;
-        /* margin-bottom: 20px; */
         background-repeat: no-repeat;
         background-position: 0% 100%;
         width: 100%vh;
@@ -66,38 +60,32 @@
     #socialmedias {
         background: url("../assets/images/ola2.svg");
         background-size: cover;
-        /* margin-bottom: 20px; */
         background-repeat: no-repeat;
         background-position:23% 0%;
         width: 100%vh;
         height:300px;
         margin: 0;
     }
-    
 }
-
 
 @media only screen and (min-width:468px) and (max-width:768px) {
     #youreinterested {
         background: url("../assets/images/OLA1.svg");
         background-size: cover;
-        /* margin-bottom: 20px; */
         background-repeat: no-repeat;
         background-position: 0% 100%;
         width: 100%vh;
         margin: 0;
         height: 300px;
     }
-    
+
     #socialmedias {
         background: url("../assets/images/ola2.svg");
         background-size: cover;
-        /* margin-bottom: 20px; */
         background-repeat: no-repeat;
         background-position:23% 0%;
         width: 100%vh;
         height:300px;
         margin: 0;
     }
-    
 }

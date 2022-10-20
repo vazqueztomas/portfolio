@@ -21,6 +21,9 @@ const Navbar = () => {
         <Link to="redes" smooth={true}>
           <BotonBotonera contenido="contacto" />
         </Link>
+        <Link to = 'colabs' smooth={true}>
+          <BotonBotonera contenido = 'colabs'/>
+        </Link>
       </Stack>
     </>
   );

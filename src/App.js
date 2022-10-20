@@ -6,6 +6,7 @@ import Descripcion from './components/Descripcion';
 import Works from './components/Works';
 import SocialMedias from './components/SocialMedias';
 import StacksTecno from './components/StacksTecno';
+import ContributorsView from './components/ContributorsView';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Works />
       <SocialMedias />
       <StacksTecno />
+      <ContributorsView />
     </ChakraProvider>
   );
 }

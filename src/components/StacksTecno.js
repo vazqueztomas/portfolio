@@ -4,15 +4,15 @@ import ArchitectureIcon from '@mui/icons-material/Architecture';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 const StacksTecno = () => {
   let frontend_techs = [
-    'HTML',
-    'CSS3',
+    'React',
     'JavaScript',
-    'Reactjs',
+    'Styled Components',
+    'HTML-CSS',
     'ChakraUI',
     'Sass',
     'Styled Components',
   ];
-  let backend_techs = ['Solidity (para web3)', 'Python', 'Nodejs', 'Express'];
+  let backend_techs = ['NodeJS', 'Python', 'MongoDB', 'Express'];
   let color = '#ff9b5c';
   return (
     <Stack
@@ -37,8 +37,7 @@ const StacksTecno = () => {
             Frontend
           </Text>
           <Text fontSize={'md'}>
-            Programo hace más de tres años, y la parte del cliente es la que mas
-            me atrae.
+            El diseño, las paletas de colores y los detalles.
           </Text>
           <Text fontSize={'lg'} color={color}>
             Lenguajes que utilizo día a día:
@@ -65,11 +64,10 @@ const StacksTecno = () => {
             Backend
           </Text>
           <Text fontSize={'md'}>
-            Si bien me gusta la parte del diseño, también me gusta su
-            contraparte.
+            La lógica, la razón y los algoritmos.
           </Text>
           <Text fontSize={'lg'} color={color}>
-            Lenguajes que he utilizado y tengo noción de ellos:
+            Lenguajes que utilizo:
           </Text>
           {backend_techs.map(e => (
             <Text fontSize={'md'}>{e}</Text>

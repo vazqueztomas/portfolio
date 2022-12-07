@@ -23,10 +23,8 @@ const Descripcion = props => {
         <Stack direction={'column'} maxW={'75ch'} textAlign={'center'} mx={6}>
           <Text fontSize={'lg'}>
             Hola! Soy Tomás Vazquez. Me dedico actualmente a desarrollar
-            aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Estoy ejerciendo profesionalmente de manera freelance, pero abierto a cualquier propuesta. Soy un apasionado por éste mundo, me encanta tener que
-            aprender todos los días algo nuevo. Además, me gusta mucho el mundo
-            de las cryptomonedas y estoy enfocándome en aprender a desarrollar
-            web3.{' '}
+            aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Soy un apasionado por la técnologia y el diseño de <TextOrange> buen software.</TextOrange> Me gusta mucho el mundo
+            de las cryptomonedas y estoy enfocándome en aprender a desarrollar<TextOrange> web3</TextOrange>{' '}
           </Text>
         </Stack>
 

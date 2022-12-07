@@ -17,7 +17,7 @@ const Hero = () => {
       <Stack id="hero-text" justifyContent={['center']} alignItems={'center'}>
         <p>Hola! Mi nombre es</p>
         <TitleRemarcado contenido="Tomás Vazquez" />
-        <h2>Soy React Developer</h2>
+        <h2>- Software Developer -</h2>
       </Stack>
       <Image src={Avatar} borderRadius={8} w={['200px', '300px']}></Image>
     </Stack>

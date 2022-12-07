@@ -7,12 +7,10 @@ const StacksTecno = () => {
     'React',
     'JavaScript',
     'Styled Components',
-    'HTML-CSS',
-    'ChakraUI',
-    'Sass',
-    'Styled Components',
+    'Figma',
+    'ChakraUI'
   ];
-  let backend_techs = ['NodeJS', 'Python', 'MongoDB', 'Express'];
+  let backend_techs = ['NodeJS', 'Python', 'MongoDB', 'Express', 'Ruby'];
   let color = '#ff9b5c';
   return (
     <Stack
@@ -40,7 +38,7 @@ const StacksTecno = () => {
             El diseño, las paletas de colores y los detalles.
           </Text>
           <Text fontSize={'lg'} color={color}>
-            Lenguajes que utilizo día a día:
+            Lenguajes que utilizo:
           </Text>
           {frontend_techs.map(e => (
             <Text fontSize={'md'}>{e}</Text>

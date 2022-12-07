@@ -14,9 +14,8 @@ import {
 import styled from 'styled-components';
   
 const BoxWithStyle = styled(Box)`
-transition: all .2s ease-in-out;
-:hover{
-
+    transition: all .2s ease-in-out;
+  :hover{
     transform: scale(1.02);
 }
 `

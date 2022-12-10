@@ -1,37 +1,37 @@
 import { Stack, Text, Image } from '@chakra-ui/react';
-import AboutMe from '../assets/images/aboutme.jpg';
 import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
+import ScrollBottom from './ScrollBottom';
 
 const TextOrange = styled.span`
-    color: var(--chakra-colors-orange-400);
-    font-weight: bold;
+    color: #e64017; font-weight: bold;
 `
 const Descripcion = props => {
   return (
-    <Stack my={8} id="aboutme">
+
+    <Stack py={8} id="aboutme" backgroundColor={'#210011'} height={'100vh'} justifyContent = 'center' alignItems={'center'}>
+      <Stack p={6} className = 'border-card-aboutme'>
+
       <Stack textAlign={'center'}>
-        <TitleRemarcado contenido={props.title}></TitleRemarcado>
+        <TitleRemarcado contenido={'Sobre mi'}></TitleRemarcado>
       </Stack>
       <Stack
-        direction={['column', 'column', 'row']}
+        direction={['column', 'column', 'column']}
         alignItems={['center', 'center']}
         justifyContent={['center', 'space-evenly']}
         my={10}
-      >
+        >
         <Stack direction={'column'} maxW={'75ch'} textAlign={'center'} mx={6}>
-          <Text fontSize={'lg'}>
-            Hola! Soy Tomás Vazquez. Me dedico actualmente a desarrollar
-            aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Soy un apasionado por la técnologia y el diseño de <TextOrange> buen software.</TextOrange> Me gusta mucho el mundo
+          <Text fontSize={'lg'} color = {'#A11B36'}>
+            Hola! Soy Tomás Vazquez. Desarrollo
+            aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Soy un apasionado por la técnologia y el diseño de <TextOrange> buen software tratando de utilizar buenas prácticas constantemente.</TextOrange> Me gusta mucho el mundo
             de las cryptomonedas y estoy enfocándome en aprender a desarrollar<TextOrange> web3</TextOrange>{' '}
           </Text>
         </Stack>
-
-        <Stack>
-          <Image src={AboutMe} w={['200px', '200px', '300px']}></Image>
-        </Stack>
       </Stack>
+      <ScrollBottom linkTo = 'aboutme'/>
+        </Stack>
     </Stack>
   );
 };

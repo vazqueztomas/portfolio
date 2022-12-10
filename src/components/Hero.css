@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 #span-title::after {
     content: '';
     border-width: 0;
@@ -30,17 +34,24 @@
     #hero-text p {
         font-size: 20px;
     }
+
     #hero-text span {
         font-size: 40px;
     }
 }
 
 @media only screen and (min-width:401px) and (max-width:736px) {
-    #hero-text{
+    #hero-text {
         text-align: center;
     }
-    #hero-text span{
+
+    #hero-text span {
         font-size: 40px;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+        text-align: center;
     }
 }
 
@@ -48,7 +59,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 100%;
-    background-image: url(../assets/images/wave.svg);
+    background-image: url(../../public/4k-minimalist-orange-aesthetic-forest-4dy7tgghgni5mwwc.jpg);
     width: 100%;
     margin: 0 auto;
+}
+
+#hero h1 {
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 0) 56%, #330C21 98%), linear-gradient(25deg, #e64017 23%, #bf1815 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
 }

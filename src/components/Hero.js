@@ -1,25 +1,26 @@
 import React from 'react';
-import { Image, Stack } from '@chakra-ui/react';
+import { Stack, Text} from '@chakra-ui/react';
 import './Hero.css';
-import Avatar from '../assets/images/profile.jpg';
-import TitleRemarcado from './TitleRemarcado';
+import { Link } from 'react-scroll';
+import ScrollBottom from './ScrollBottom';
+
 
 const Hero = () => {
   return (
     <Stack
       id="hero"
       fontWeight={'bolder'}
-      direction={['column', 'row', 'row']}
+      direction={['column',]}
       alignItems={['center', 'center']}
-      justifyContent={['center', 'center', 'space-evenly']}
-      mb={8}
-    >
-      <Stack id="hero-text" justifyContent={['center']} alignItems={'center'}>
-        <p>Hola! Mi nombre es</p>
-        <TitleRemarcado contenido="Tomás Vazquez" />
-        <h2>- Software Developer -</h2>
+      justifyContent={'center'}
+      color = '#FFA475' 
+      height= {'100vh'}
+      >
+      <Stack id="hero-text" justifyContent={['center']} alignItems={'center'} pt={'260px'}>
+        <Text fontSize={['5xl','6xl', '95px']} as = 'h1' px={[2, 1, 0]}>diseño y tecnología</Text>
       </Stack>
-      <Image src={Avatar} borderRadius={8} w={['200px', '300px']}></Image>
+      <ScrollBottom linkTo = 'aboutme' />
+      
     </Stack>
   );
 };

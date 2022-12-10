@@ -1,0 +1,56 @@
+.border-card-aboutme {
+  border: 1px solid #333;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+  padding: 16px;
+
+}
+
+.border-card-aboutme::before,
+.border-card-aboutme::after {
+  position: absolute;
+  background: transparent;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.border-card-aboutme::before {
+  height: 50px;
+  width: 130px;
+}
+
+.border-card-aboutme::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.border-card-aboutme:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.border-card-aboutme:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.border-card-aboutme:hover {
+  background: #fff;
+}

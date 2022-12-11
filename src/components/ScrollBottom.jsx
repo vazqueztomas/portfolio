@@ -6,7 +6,7 @@ const ScrollBottom = ({linkTo}) => {
   return (
     <>
     <div class = 'wrapper'>
-      <Link to = {linkTo} smooth = {true}>
+      <Link to = {linkTo} smooth = {true} duration={800}>
       <div class="circle">
       </div>    
       <div class="circle circle-2">

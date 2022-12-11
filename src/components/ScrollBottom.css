@@ -1,9 +1,9 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
-  padding-top: 100px;
+  padding-top: 130px;
 }
 
 .circle {

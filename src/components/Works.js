@@ -1,75 +1,50 @@
-import { Text, Stack, Button, WrapItem, Wrap } from '@chakra-ui/react';
+import { Stack,Img } from '@chakra-ui/react';
 import React from 'react';
-import TitleRemarcado from './TitleRemarcado';
-import WorkCard from './WorkCard';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import BillabongSVG from '../assets/images/billabong.svg';
 import BarberiaSVG from '../assets/images/barberia.svg';
 import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
 import RuinsSVG from '../assets/images/tipos-de-computadoras.svg';
 import LyricsSVG from '../assets/images/lyrics.svg';
-import DevaluargSVG from '../assets/images/devaluarg.svg';
+import DevaluargSVG from '../assets/images/devaluarg.jpg';
 import './Works.css';
-const Works = props => {
-  const proyects = [
-    {
-      link: 'https://billabongcopy.web.app/',
-      name: 'Billabong Page',
-      src: BillabongSVG,
-    },
-    {
-      link: 'https://labarberiadetoto.web.app',
-      name: 'La barberia de Toto',
-      src: LaBarbDeTotoSVG,
-    },
-    {
-      link: 'https://benescuela.web.app',
-      name: 'Escuela Barberia',
-      src: BarberiaSVG,
-    },
-    {
-      link: 'https://ruinsdesign.web.app',
-      name: 'Ruins Design',
-      src: RuinsSVG,
-    },
-    {
-      link: 'https://homelyricstudio.web.app/',
-      name: 'Home Lyrics Studio',
-      src: LyricsSVG,
-    },
-    { link: 'https://devaluarg.web.app', name: 'Devaluarg', src: DevaluargSVG },
-  ];
+import ScrollBottom from './ScrollBottom';
 
+
+const Works = ()  => {
+ 
   return (
-    <Stack my={20} id="works">
+    <Stack id="works" background={'#210011;'}>
       <Stack
         textAlign={'center'}
         direction={['column', 'column', 'row']}
         alignItems={'center'}
         justifyContent={'center'}
-        my={20}
+        my={5}
       >
-        <Text fontSize={['20px', '20px', '30px']}>Más de 2 años de</Text>
-        <TitleRemarcado contenido="EXPERIENCIA"></TitleRemarcado>
       </Stack>
+      <Stack justifyContent={'center'} direction = {['column', 'column', 'row' ]} gap = {2} paddingLeft = {4} alignItems= {['center','center']} w={'100%'} maxW={['95%', '80%', '100%']}>
+            <Img w={[300,400,250]}  h = {[150, 250 ,515 ]}src = {BillabongSVG} objectFit= 'cover'/>
+          <Stack direction={['row', 'row ','column']} gap = {2}>
+          <Img src = {DevaluargSVG} w={[130,250]} h = {[130, 250]} objectFit = 'cover'/>
+          <Img src = {RuinsSVG}  w={[130,250]} h = {[130,250]} objectFit = 'cover' />
+          </Stack>
+          <Stack direction={'column'} margin = {'0 auto'} gap = {2}>
+          <Img src = {BarberiaSVG} objectFit = 'cover' w={'100%'} h = {[150,250]}/>
+          <Stack direction = {['row','column','row']} gap = {2}>
 
-      <Wrap justify={'center'} align={'center'} spacing={6} p={2}>
-        {proyects.map(proyect => {
-          return (
-            <WrapItem>
-              <WorkCard image={proyect.src} link={proyect.link}></WorkCard>
-            </WrapItem>
-          );
-        })}
-      </Wrap>
-      <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
+          <Img src={LyricsSVG} w={[150, 250]} h = {[150, 250]} objectFit = 'cover'/>
+          <Img src = {LaBarbDeTotoSVG} w={[130, 250]} h = {[130, 250]} objectFit = 'cover'/>
+          </Stack>
+          </Stack>
+      </Stack>
+      {/* <Stack alignItems={'center'} justifyContent={'center'} pt={10}>
         <a
           href="https://github.com/vazqueztomas"
           target="_blank"
           rel="noreferrer"
         >
           <Button
-            colorScheme={'orange'}
+            colorScheme={'#fe4b23'}
             borderRadius={'20px 20px'}
             variant={'outline'}
             id="btn-github-seemore"
@@ -78,7 +53,8 @@ const Works = props => {
             <GitHubIcon /> Mirá más en mi Github{' '}
           </Button>
         </a>
-      </Stack>
+      </Stack> */}\
+      <ScrollBottom/>
     </Stack>
   );
 };

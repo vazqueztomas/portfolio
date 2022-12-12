@@ -4,7 +4,7 @@ import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
 import ScrollBottom from './ScrollBottom';
 
-const TECNOLOGIAS = ['REACT', 'NODEJS', 'EXPRESS', 'PYTHON', 'HTML/CSS', 'STYLED-COMPONENTS', 'BLOCKCHAIN', 'SOLIDITY', 'UX/UI']
+const TECNOLOGIAS = ['REACT', 'NODEJS', 'EXPRESS', 'PYTHON','MONGODB', 'HTML/CSS', 'STYLED-COMPONENTS', 'BLOCKCHAIN', 'SOLIDITY', 'UX/UI', 'ARQUITECTURA DE SOFTWARE', 'SMARTS CONTRACTS']
 
 const Circle = styled.div`
     width: ${props => props.size};
@@ -70,8 +70,11 @@ const Descripcion = () => {
           </Text>
 
           <Text fontSize={'lg'} color = {'#A11B36'}>
-            <TextOrange> Tecnologías que utilizo:</TextOrange>{' '}
+            <TextOrange> Tech Stack:</TextOrange>{' '}
           </Text>
+          <Stack direction={'row'} flexWrap='wrap' gap={2} textAlign='center'>
+            {TECNOLOGIAS.map((tech) => <Text backgroundColor={'#A11B36'} color='#e4b3a3' p={1} borderRadius={4}>{tech}</Text>)}
+          </Stack>
 
 
         </Stack>

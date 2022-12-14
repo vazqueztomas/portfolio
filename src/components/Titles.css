@@ -3,4 +3,7 @@
 #titles {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 0) 56%, #330C21 98%), linear-gradient(25deg, #e64017 23%, #bf1815 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

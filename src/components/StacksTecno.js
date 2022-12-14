@@ -40,8 +40,8 @@ const StacksTecno = () => {
           <Text fontSize={'lg'} color={color}>
             Lenguajes que utilizo:
           </Text>
-          {frontend_techs.map(e => (
-            <Text fontSize={'md'}>{e}</Text>
+          {frontend_techs.map((e, id) => (
+            <Text key = {id} fontSize={'md'}>{e}</Text>
           ))}
         </Stack>
       </Stack>
@@ -67,8 +67,8 @@ const StacksTecno = () => {
           <Text fontSize={'lg'} color={color}>
             Lenguajes que utilizo:
           </Text>
-          {backend_techs.map(e => (
-            <Text fontSize={'md'}>{e}</Text>
+          {backend_techs.map((e, id) => (
+            <Text key = {id} fontSize={'md'}>{e}</Text>
           ))}{' '}
         </Stack>
       </Stack>

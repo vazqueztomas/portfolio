@@ -48,7 +48,7 @@ const Descripcion = () => {
 
   return (
 
-    <Stack py={8} id="aboutme" backgroundColor={'#210011'} height={'100vh'} justifyContent = 'center' alignItems={'center'}>
+    <Stack py={8} id="aboutme" backgroundColor={'#210011'} height={'100vh'} justifyContent = 'center' alignItems={'center'} gap = {20}>
       <Stack p={6} className = 'border-card-aboutme' w={'100%'}>
         <Circle size = {'170px'} left = {'-90%'} top = {'400px'}/>
 
@@ -73,7 +73,7 @@ const Descripcion = () => {
             <TextOrange> Tech Stack:</TextOrange>{' '}
           </Text>
           <Stack direction={'row'} flexWrap='wrap' gap={2} textAlign='center'>
-            {TECNOLOGIAS.map((tech) => <Text backgroundColor={'#A11B36'} color='#e4b3a3' p={1} borderRadius={4}>{tech}</Text>)}
+            {TECNOLOGIAS.map((tech, id) => <Text key = {id} backgroundColor={'#A11B36'} color='#e4b3a3' p={1} borderRadius={4}>{tech}</Text>)}
           </Stack>
 
 

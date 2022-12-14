@@ -14,6 +14,7 @@ const Hero = () => {
       justifyContent={'center'}
       color = '#FFA475' 
       height= {'100vh'}
+      gap = {20}
       >
       <Stack id="hero-text" justifyContent={['center']} alignItems={'center'} pt={'260px'}>
         <Text fontSize={['4xl','5xl','6xl', '95px']} as = 'h1' px={[2, 1, 0]}>diseño y tecnología</Text>

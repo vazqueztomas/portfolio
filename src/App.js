@@ -6,6 +6,7 @@ import Works from './components/Works';
 import SocialMedias from './components/SocialMedias';
 import StacksTecno from './components/StacksTecno';
 import ContributorsView from './components/ContributorsView';
+import Slider from './components/Slider/Slider';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Descripcion title="Sobre mi"></Descripcion>
       <Works />
+      <Slider/>
       <SocialMedias />
       <StacksTecno />
       <ContributorsView />

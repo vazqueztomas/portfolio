@@ -31,8 +31,8 @@ const ContributorsView = () => {
         </Text>
         <TitleRemarcado contenido="colaboré"></TitleRemarcado>
         <Wrap justify={'center'} align={'center'} spacing={6} mb={24} w={'100%'}>
-        {cryptoData.map((data) => 
-        <WrapItem>
+        {cryptoData.map((data, id) => 
+        <WrapItem key = {id}>
           <CardCrypto 
             logoSrc = {data.logoSrc} 
             heading ={data.heading} 

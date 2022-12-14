@@ -4,7 +4,8 @@ import TextOrange from './common/TextOrange';
 import TitleRemarcado from './TitleRemarcado';
 import CardCrypto from './web3_section/CardCrypto';
 import logoCrypto from '../assets/images/full.svg';
-import { Wrap, WrapItem } from '@chakra-ui/react';
+import { Stack, Wrap, WrapItem, Text } from '@chakra-ui/react';
+import { BoxAnimated } from './Hero';
 const ContributorsView = () => {
   const cryptoData = [{
     logoSrc: logoCrypto,
@@ -25,11 +26,16 @@ const ContributorsView = () => {
     linkWebPage: 'https://github.com/vazqueztomas/backstage-hacktoberfest',
   }]
   return (
-      <Container direction="column" id ='colabs'>
-        <Text size="28px" margin="12px 8px 0 0 ">
+    
+    <Stack color = '#FFA475' backgroundColor = {'#210011'} direction="column" id ='colabs' justifyContent={'center'} alignItems = {'center'} p = {6} textAlign = {'center'}>
+        <BoxAnimated duration = {.6}>
+        <Text size={14} margin="12px 8px 0 0 ">
           Proyectos <TextOrange>web3</TextOrange> en los que{' '}
         </Text>
         <TitleRemarcado contenido="colaboré"></TitleRemarcado>
+        </BoxAnimated>
+        <BoxAnimated duration = {1.7}>
+
         <Wrap justify={'center'} align={'center'} spacing={6} mb={24} w={'100%'}>
         {cryptoData.map((data, id) => 
         <WrapItem key = {id}>
@@ -44,20 +50,10 @@ const ContributorsView = () => {
             </WrapItem>
         )}
         </Wrap>
-      </Container>
+        </BoxAnimated>
+      </Stack>
+
   );
 };
 
-const Container = styled.section`
-  display: flex;
-  flex-direction: ${props => props.direction};
-  justify-content: center;
-  align-items: center;
-  margin: 16px 0 32px 0;
-`;
-
-const Text = styled.h2`
-  font-size: ${props => props.size};
-  margin: ${props => props.margin};
-`;
 export default ContributorsView;

@@ -3,6 +3,7 @@ import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
 import ScrollBottom from './ScrollBottom';
+import { BoxAnimated } from './Hero';
 
 const TECNOLOGIAS = ['REACT', 'NODEJS', 'EXPRESS', 'PYTHON','MONGODB', 'HTML/CSS', 'STYLED-COMPONENTS', 'BLOCKCHAIN', 'SOLIDITY', 'UX/UI', 'ARQUITECTURA DE SOFTWARE', 'SMARTS CONTRACTS']
 
@@ -15,6 +16,10 @@ const Circle = styled.div`
     box-shadow: 0 0 60px 0 #A11B36;
     -webkit-filter: blur(35px);
     top: ${props => props.top};
+
+    @media (max-width: 568px) {
+      display: none;
+    }
 
     -webkit-animation-name: prop-600;
     -webkit-animation-duration: 10s;
@@ -38,8 +43,8 @@ const Circle = styled.div`
     100% {
         -webkit-transform: translateX(0px);
     }
-
-}  `
+}
+`
 
 const TextOrange = styled.span`
     color: #e64017; font-weight: bold;
@@ -47,9 +52,10 @@ const TextOrange = styled.span`
 const Descripcion = () => {
 
   return (
-
-    <Stack py={8} id="aboutme" backgroundColor={'#210011'} height={'100vh'} justifyContent = 'center' alignItems={'center'} gap = {20}>
-      <Stack p={6} className = 'border-card-aboutme' w={'100%'}>
+    
+    <Stack py={[0, 2, 8]} id="aboutme" backgroundColor={'#210011'} height={['100%','100vh']} justifyContent = 'center' alignItems={'center'} gap = {[10, 10, 20]}>
+      <BoxAnimated>
+      <Stack p={[2,2,6]} className = 'border-card-aboutme' w={'100%'}>
         <Circle size = {'170px'} left = {'-90%'} top = {'400px'}/>
 
       <Stack textAlign={'center'}>
@@ -62,8 +68,9 @@ const Descripcion = () => {
         my={10}
         >
 
-        <Stack direction={'column'} maxW={'75ch'} textAlign={'center'} mx={6}>
-          <Text fontSize={'lg'} color = {'#A11B36'}>
+
+        <Stack direction={'column'} maxW={'75ch'} textAlign={'center'} mx={[2, 2, 6]}>
+          <Text fontSize={['sm','lg']} color = {'#A11B36'}>
             Hola! Mi nombre es Tomás Vazquez. Desarrollador de
             aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Soy un apasionado por la técnologia y el diseño de <TextOrange> buen software tratando de utilizar buenas prácticas constantemente.</TextOrange> Me gusta mucho el mundo
             de las cryptomonedas y estoy enfocándome en aprender a desarrollar<TextOrange> web3</TextOrange>{' '}
@@ -72,7 +79,7 @@ const Descripcion = () => {
           <Text fontSize={'lg'} color = {'#A11B36'}>
             <TextOrange> Tech Stack:</TextOrange>{' '}
           </Text>
-          <Stack direction={'row'} flexWrap='wrap' gap={2} textAlign='center'>
+          <Stack direction={'row'} flexWrap='wrap' gap={2} my={6} textAlign='center' justifyContent={['center']}>
             {TECNOLOGIAS.map((tech, id) => <Text key = {id} backgroundColor={'#A11B36'} color='#e4b3a3' p={1} borderRadius={4}>{tech}</Text>)}
           </Stack>
 
@@ -80,11 +87,12 @@ const Descripcion = () => {
         </Stack>
       </Stack>
         </Stack>
-        {/* <Circle size = {'80px'} left = {'80%'}/> */}
+    </BoxAnimated>
 
       <ScrollBottom linkTo = 'works'/>
 
     </Stack>
+
   );
 };
 

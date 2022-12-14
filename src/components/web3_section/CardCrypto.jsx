@@ -12,6 +12,7 @@ import {
   } from '@chakra-ui/react';
   import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
+import { orange } from '@mui/material/colors';
   
 const BoxWithStyle = styled(Box)`
     transition: all .2s ease-in-out;
@@ -28,9 +29,9 @@ const CardCrypto = (props) => {
     flexDirection={'column'}
       maxW={'320px'}
       w={'full'}
-      bg={useColorModeValue('white', 'gray.900')}
-      boxShadow={'2xl'}
-      rounded={'lg'}
+      backgroundColor = {'#A11B36'}
+      color = {'#e4b3a3'}
+      boxShadow={'1xl'}
       p={6}
       textAlign={'center'}
       alignItems={'center'}
@@ -50,7 +51,7 @@ const CardCrypto = (props) => {
       </Text>
       <Text
         textAlign={'center'}
-        color={useColorModeValue('gray.700', 'gray.400')}
+        color={'#e4b3a3'}
         px={3}>
             {props.infoCard}{' '}
       </Text>
@@ -63,7 +64,11 @@ const CardCrypto = (props) => {
           rounded={'full'}
           _focus={{
             bg: 'gray.200',
-          }}>
+          }}
+          color = {'#e4b3a3'}
+          border = '1px solid black'
+          backgroundColor = 'transparent'
+>
         <GitHubIcon
               style={{
                 border: '1px solid transparent',
@@ -79,14 +84,15 @@ const CardCrypto = (props) => {
           flex={1}
           fontSize={'sm'}
           rounded={'full'}
-          bg={'orange.400'}
-          color={'white'}
+          border = '1px solid black'
+          backgroundColor = 'transparent'
+          color={'#e4b3a3'}
           boxShadow={'3xl'}
           _hover={{
-              bg: 'orange.500',
+              bg: '#A11B36',
             }}
             _focus={{
-                bg: 'orange.500',
+                bg: '#A11B36',
             }}>
           Ir al sitio
         </Button>

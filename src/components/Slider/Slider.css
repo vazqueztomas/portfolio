@@ -25,8 +25,8 @@
 }
 
 .btn-slide {
-  width: 60px;
-  height: 60px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: transparent;
   border: 1px solid rgba(34, 34, 34, 0.287);
@@ -65,14 +65,14 @@
 }
 
 .dot {
-  width: 20px;
-  height: 20px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 3px solid #f1f1f1;
+  border: 1px solid #f1f1f1;
   margin: 0 5px;
-  background: #f1f1f1;
+  background: rgb(32, 32, 32);
 }
 
 .dot.active {
-  background: rgb(32, 32, 32);
+  background: #f1f1f1;
 }

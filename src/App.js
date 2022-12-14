@@ -14,9 +14,8 @@ function App() {
       <Hero />
       <Descripcion title="Sobre mi"></Descripcion>
       <Works />
-      <Slider/>
-      <SocialMedias />
-      <StacksTecno />
+      {/* <SocialMedias /> */}
+      {/* <StacksTecno /> */}
       <ContributorsView />
     </ChakraProvider>
   );

@@ -7,7 +7,6 @@ import RuinsSVG from '../assets/images/ruins.jpg';
 import LyricsSVG from '../assets/images/lyrics.jpg';
 import DevaluargSVG from '../assets/images/devaluarg.jpg';
 import './Works.css';
-import ScrollBottom from './ScrollBottom';
 import { BoxAnimated } from './Hero';
 
 
@@ -39,7 +38,6 @@ const Works = ()  => {
           </Stack>
           </Stack>
       </Stack>
-      <ScrollBottom/>
       </BoxAnimated>
 
     </Stack>

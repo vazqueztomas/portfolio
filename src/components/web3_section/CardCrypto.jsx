@@ -6,13 +6,11 @@ import {
     Text,
     Stack,
     Button,
-    useColorModeValue,
     Image,
     Link
   } from '@chakra-ui/react';
   import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
-import { orange } from '@mui/material/colors';
   
 const BoxWithStyle = styled(Box)`
     transition: all .2s ease-in-out;

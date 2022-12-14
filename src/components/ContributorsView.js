@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import TextOrange from './common/TextOrange';
 import TitleRemarcado from './TitleRemarcado';
 import CardCrypto from './web3_section/CardCrypto';

@@ -2,7 +2,6 @@ import { Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
-import ScrollBottom from './ScrollBottom';
 import { BoxAnimated } from './Hero';
 
 const TECNOLOGIAS = ['REACT', 'NODEJS', 'EXPRESS', 'PYTHON','MONGODB', 'HTML/CSS', 'STYLED-COMPONENTS', 'BLOCKCHAIN', 'SOLIDITY', 'UX/UI', 'ARQUITECTURA DE SOFTWARE', 'SMARTS CONTRACTS']
@@ -88,8 +87,6 @@ const Descripcion = () => {
       </Stack>
         </Stack>
     </BoxAnimated>
-
-      <ScrollBottom linkTo = 'works'/>
 
     </Stack>
 

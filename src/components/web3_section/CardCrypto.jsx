@@ -11,6 +11,7 @@ import {
   } from '@chakra-ui/react';
   import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from 'styled-components';
+import { BoxAnimated } from '../Hero';
   
 const BoxWithStyle = styled(Box)`
     transition: all .2s ease-in-out;
@@ -21,6 +22,8 @@ const BoxWithStyle = styled(Box)`
 
 const CardCrypto = (props) => {
   return (
+    <BoxAnimated>
+
     <Center py={6} mb={12}>
     <BoxWithStyle
     display={'flex'}
@@ -92,12 +95,15 @@ const CardCrypto = (props) => {
             _focus={{
                 bg: '#A11B36',
             }}>
-          Ir al sitio
+          Go to site
         </Button>
               </Link>
       </Stack>
     </BoxWithStyle>
+    
   </Center>
+  </BoxAnimated>
+
   )
 }
 

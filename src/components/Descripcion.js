@@ -58,7 +58,7 @@ const Descripcion = () => {
         <Circle size = {'170px'} left = {'-90%'} top = {'400px'}/>
 
       <Stack textAlign={'center'}>
-        <TitleRemarcado contenido={'Sobre mi'}></TitleRemarcado>
+        <TitleRemarcado contenido={'About me'}></TitleRemarcado>
       </Stack>
       <Stack
         direction={['column', 'column', 'column']}
@@ -70,9 +70,10 @@ const Descripcion = () => {
 
         <Stack direction={'column'} maxW={'75ch'} textAlign={'center'} mx={[2, 2, 6]}>
           <Text fontSize={['sm','lg']} color = {'#A11B36'}>
-            Hola! Mi nombre es Tomás Vazquez. Desarrollador de
-            aplicaciones fullstack, utilizando tecnologías como <TextOrange>React, Node y Mongo.</TextOrange> Soy un apasionado por la técnologia y el diseño de <TextOrange> buen software tratando de utilizar buenas prácticas constantemente.</TextOrange> Me gusta mucho el mundo
-            de las cryptomonedas y estoy enfocándome en aprender a desarrollar<TextOrange> web3</TextOrange>{' '}
+            Hi! My name is Tomás Vazquez. I'm a software developer, I use technologies like  <TextOrange>React, Node, Mongo or Python. </TextOrange>
+            I'm a apassionate about technology and the desing of <TextOrange> quality software, 
+            trying to use the best practices steadily.</TextOrange> I love 
+            cryptocurrencies and blockchain world, and my idea is to improve my development <TextOrange> web3 applications.</TextOrange>{' '}
           </Text>
 
           <Text fontSize={'lg'} color = {'#A11B36'}>

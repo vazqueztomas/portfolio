@@ -3,20 +3,19 @@ import { ChakraProvider, theme } from '@chakra-ui/react';
 import Hero from './components/Hero';
 import Descripcion from './components/Descripcion';
 import Works from './components/Works';
-import SocialMedias from './components/SocialMedias';
-import StacksTecno from './components/StacksTecno';
 import ContributorsView from './components/ContributorsView';
-import Slider from './components/Slider/Slider';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Hero />
-      <Descripcion title="Sobre mi"></Descripcion>
+      <Descripcion title="About me "></Descripcion>
       <Works />
       {/* <SocialMedias /> */}
       {/* <StacksTecno /> */}
       <ContributorsView />
+      <Contact/>
     </ChakraProvider>
   );
 }

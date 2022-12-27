@@ -57,7 +57,7 @@ const Descripcion = () => {
       <Stack p={[2,2,6]} className = 'border-card-aboutme' w={'100%'}>
         <Circle size = {'170px'} left = {'-90%'} top = {'400px'}/>
 
-      <Stack textAlign={'center'}>
+      <Stack textAlign={'center'} justify = 'center' align = 'center'>
         <TitleRemarcado contenido={'About me'}></TitleRemarcado>
       </Stack>
       <Stack

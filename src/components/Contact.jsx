@@ -10,7 +10,7 @@ const Contact = () => {
     <Stack background={'#210011;'} justifyContent = {'center'} alignItems = {'center'} color = '#FFA475' padding = {[3, 0, 0]}>
       <BoxAnimated>
 
-      <Stack color = {'#A11B36'}>
+      <Stack color = {'#A11B36'} justify = 'center' align={'center'}>
         <TitleRemarcado contenido = 'Contact with me'/>
       </Stack>
       <Text p = {[4, 0, 0]} textAlign = 'center'>Here you can see my social medias. Let's speak, i'm open to work!</Text>

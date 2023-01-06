@@ -16,7 +16,7 @@ const Contact = () => {
       <Text p = {[4, 0, 0]} textAlign = 'center'>Here you can see my social medias. Let's speak, i'm open to work!</Text>
 
 
-      <Stack direction = {['column', 'column', 'row']} justify = 'space-evenly' align={'center'} w = '100%' pt = {4}>
+      <Stack direction = {['column', 'column', 'row']} justify = 'space-evenly' align={'center'} w = '100%' py = {4} mb = {8}>
 
         <Stack direction = 'column' textAlign={'center'} justify = 'center' align={'center'} py = {[4, 0, 0]}>
           <Stack direction = 'row' gap = {4}>

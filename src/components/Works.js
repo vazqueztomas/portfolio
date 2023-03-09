@@ -1,6 +1,5 @@
 import { Stack, Img, Link } from '@chakra-ui/react';
 import React from 'react';
-import BillabongSVG from '../assets/images/billabong.svg';
 import BarberiaSVG from '../assets/images/barberia.svg';
 import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
 import RuinsSVG from '../assets/images/ruins.jpg';
@@ -32,7 +31,7 @@ const Works = () => {
           w={'100%'}
           py={2}
         >
-          <Link href="https://billabongcopy.web.app">
+          <Link href="https://onempleo.com">
             <Img
               w={[300, 400, 250]}
               h={[150, 250, 515]}

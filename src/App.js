@@ -12,10 +12,8 @@ function App() {
       <Hero />
       <Descripcion title="About me "></Descripcion>
       <Works />
-      {/* <SocialMedias /> */}
-      {/* <StacksTecno /> */}
       <ContributorsView />
-      <Contact/>
+      <Contact />
     </ChakraProvider>
   );
 }

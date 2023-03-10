@@ -1,25 +1,46 @@
-import React from 'react';
-import { Stack, Image, Box, Link } from '@chakra-ui/react';
-import styled from 'styled-components'
-const ImageStyled = styled(Image)`
-transition: all .2s ease-in-out;
-:hover{
-    transform: scale(1.02);
-}
+import { AnimateSharedLayout } from 'framer-motion';
+import React, { useState } from 'react';
+import CompactWork from './works/CompactWork';
+import Content from './works/Content';
+import ExpandedWork from './works/ExpandendWork';
+import styled from 'styled-components';
 
-`
-const WorkCard = props => {
+const Container = styled.div`
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+`;
+
+function WorkCard({ item, onCollapse, onExpand, disabled }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const collapseDate = () => {
+    setIsExpanded(false);
+    onCollapse();
+  };
+
+  const expandDate = () => {
+    setIsExpanded(true);
+    onExpand();
+  };
+
   return (
-    <Stack alignItems={'center'} justifyContent={'center'}>
-      <Stack alignItems={'center'}>
-        <Link href={props.link}>
-          <Box boxSize={'21,5rem'} maxW={340} px={[4, 0]}>
-            <ImageStyled src={props.image} m={0} p={0} borderRadius={'12px'}></ImageStyled>
-          </Box>
-        </Link>
-      </Stack>
-    </Stack>
+    <Container>
+      <AnimateSharedLayout>
+        {isExpanded ? (
+          <ExpandedWork onCollapse={collapseDate} item={item}>
+            <Content item={item} disabled={disabled} />
+          </ExpandedWork>
+        ) : (
+          <CompactWork onExpand={expandDate} disabled={disabled} item={item}>
+            <Content item={item} disabled={disabled} />
+          </CompactWork>
+        )}
+      </AnimateSharedLayout>
+    </Container>
   );
-};
+}
 
 export default WorkCard;

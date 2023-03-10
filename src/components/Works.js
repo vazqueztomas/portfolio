@@ -1,98 +1,104 @@
-import { Stack, Img, Link } from '@chakra-ui/react';
-import React from 'react';
-import BarberiaSVG from '../assets/images/barberia.svg';
-import LaBarbDeTotoSVG from '../assets/images/labarberiadetoto.svg';
-import RuinsSVG from '../assets/images/ruins.jpg';
-import DevaluargSVG from '../assets/images/devaluarg.jpg';
-import './Works.css';
-import { BoxAnimated } from './Hero';
+import React, { useState } from 'react';
+import { motion, AnimateSharedLayout } from 'framer-motion';
 import TitleRemarcado from './TitleRemarcado';
+import './Works.css';
 
-const Works = () => {
+function Content({ day, disabled }) {
   return (
-    <Stack
-      id="works"
-      gap={16}
-      background={'#210011;'}
-      direction={'column'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      paddingY={'6rem'}
-      textAlign={'center'}
+    <motion.h1
+      className="title"
+      layoutId="title"
+      style={{ opacity: disabled ? 0.2 : 1 }}
     >
-      <BoxAnimated>
-        <TitleRemarcado contenido="PROJECTS" />
-        <Stack
-          justifyContent={'center'}
-          direction={['column', 'column', 'row']}
-          gap={2}
-          p={4}
-          alignItems={['center', 'center']}
-          w={'100%'}
-          py={2}
-        >
-          <Link href="https://onempleo.com">
-            <Img
-              w={[300, 400, 250]}
-              h={[150, 250, 515]}
-              src={'https://onempleo.com/assets/logo_OnEmpleo.565f4192.svg'}
-              objectFit="contain"
-              backgroundColor={'white'}
-              padding={6}
-            />
-          </Link>
-          <Stack direction={['row', 'row ', 'column']} gap={2}>
-            <Link href="https://devaluarg.web.app">
-              <Img
-                src={DevaluargSVG}
-                w={[130, 250]}
-                h={[130, 250]}
-                objectFit="cover"
-              />
-            </Link>
-            <Link href="https://ruins-design.web.app">
-              <Img
-                src={RuinsSVG}
-                w={[130, 250]}
-                h={[130, 250]}
-                objectFit="cover"
-              />
-            </Link>
-          </Stack>
-          <Stack direction={'column'} margin={'0 auto'} gap={2}>
-            <Link href="https://benescuela.web.app">
-              <Img
-                src={BarberiaSVG}
-                objectFit="cover"
-                w={[300, 400, 500]}
-                h={[150, 250, 250]}
-              />
-            </Link>
-            <Stack direction={['row', 'rows', 'row']} gap={2}>
-              <Link href="https://cancheros-15f93.web.app/">
-                <Img
-                  src={
-                    'https://holaservicios.com.ar/wp-content/uploads/2023/01/AFA.jpg'
-                  }
-                  w={[150, 250]}
-                  h={[150, 250]}
-                  objectFit="cover"
-                />
-              </Link>
-              <Link href="https://labarberiadetoto.web.app">
-                <Img
-                  src={LaBarbDeTotoSVG}
-                  w={[150, 250]}
-                  h={[150, 250]}
-                  objectFit="cover"
-                />
-              </Link>
-            </Stack>
-          </Stack>
-        </Stack>
-      </BoxAnimated>
-    </Stack>
+      {day}
+    </motion.h1>
   );
-};
+}
 
-export default Works;
+function ExpandedCard({ children, onCollapse }) {
+  return (
+    <>
+      <motion.div
+        className="card expanded"
+        layoutId="expandable-card"
+        onClick={onCollapse}
+      >
+        {children}
+      </motion.div>
+      <motion.p
+        className="card expanded secondary"
+        onClick={onCollapse}
+        transition={{ delay: 0.3 }}
+        initial={{ opacity: 0, top: '6rem' }}
+        animate={{ opacity: 1, top: '3rem' }}
+      >
+        Today is clear
+      </motion.p>
+    </>
+  );
+}
+
+function CompactCard({ children, onExpand, disabled }) {
+  return (
+    <motion.div
+      className="card compact"
+      layoutId="expandable-card"
+      onClick={disabled ? undefined : onExpand}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function DateButton({ day, onCollapse, onExpand, disabled }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const collapseDate = () => {
+    setIsExpanded(false);
+    onCollapse();
+  };
+
+  const expandDate = () => {
+    setIsExpanded(true);
+    onExpand();
+  };
+
+  return (
+    <div className="card-container">
+      <AnimateSharedLayout>
+        {isExpanded ? (
+          <ExpandedCard onCollapse={collapseDate} day={day}>
+            <Content day={day} disabled={disabled} />
+          </ExpandedCard>
+        ) : (
+          <CompactCard onExpand={expandDate} disabled={disabled} day={day}>
+            <Content day={day} disabled={disabled} />
+          </CompactCard>
+        )}
+      </AnimateSharedLayout>
+    </div>
+  );
+}
+
+export default function App() {
+  const [expandedDay, setCollapsedDay] = useState();
+  const days = ['Hola', 26, 27, 28, 29];
+
+  return (
+    <>
+      <div className="container">
+        <div className="dates">
+          {days.map(day => (
+            <DateButton
+              key={day}
+              day={day}
+              disabled={expandedDay !== day && expandedDay !== undefined}
+              onExpand={() => setCollapsedDay(day)}
+              onCollapse={() => setCollapsedDay()}
+            />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}

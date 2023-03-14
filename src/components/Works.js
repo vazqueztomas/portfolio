@@ -5,13 +5,13 @@ import './Works.css';
 
 function Content({ day, disabled }) {
   return (
-    <motion.h1
+    <motion.div
       className="title"
       layoutId="title"
       style={{ opacity: disabled ? 0.2 : 1 }}
     >
-      {day}
-    </motion.h1>
+      <img src={day} />
+    </motion.div>
   );
 }
 
@@ -25,7 +25,7 @@ function ExpandedCard({ children, onCollapse }) {
       >
         {children}
       </motion.div>
-      <motion.p
+      {/* <motion.p
         className="card expanded secondary"
         onClick={onCollapse}
         transition={{ delay: 0.3 }}
@@ -33,7 +33,7 @@ function ExpandedCard({ children, onCollapse }) {
         animate={{ opacity: 1, top: '3rem' }}
       >
         Today is clear
-      </motion.p>
+      </motion.p> */}
     </>
   );
 }
@@ -82,11 +82,17 @@ function DateButton({ day, onCollapse, onExpand, disabled }) {
 
 export default function App() {
   const [expandedDay, setCollapsedDay] = useState();
-  const days = ['Hola', 26, 27, 28, 29];
+  const days = [
+    'https://onempleo.com/assets/logo_OnEmpleo.565f4192.svg',
+    'https://img.freepik.com/vector-premium/diseno-logotipo-cara-mago-blanco-negro_497517-273.jpg?w=2000',
+    'https://media.istockphoto.com/id/485112085/es/foto/d%C3%B3lares-en-primer-plano.jpg?s=612x612&w=0&k=20&c=-Ni4_ApeGd11_NjSSPJRdwpwGV6nBzoii0hh7sDrWt8=',
+    'https://wallpapercave.com/wp/wp3164738.jpg',
+  ];
 
   return (
     <>
       <div className="container">
+        <TitleRemarcado contenido="PROJECTS" />
         <div className="dates">
           {days.map(day => (
             <DateButton

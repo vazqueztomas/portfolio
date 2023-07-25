@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import './Works.css';
 import { works } from './worksArray';
+import { SimpleGrid } from '@chakra-ui/react';
 
 export default function App() {
   const [showCard, setShowCard] = useState(false);
@@ -20,9 +21,10 @@ export default function App() {
       }}
     >
       <TitleRemarcado contenido="PROJECTS" />
-      <div
+      <SimpleGrid
         style={{
-          display: 'flex',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
           flexDirection: 'column',
           height: '100%',
           justifyContent: 'center',
@@ -46,6 +48,7 @@ export default function App() {
               alignItems: 'center',
               textAlign: 'center',
               margin: '0 16px',
+              maxWidth: '20rem',
             }}
             //hover
             whileHover={{
@@ -60,7 +63,6 @@ export default function App() {
             }}
             layout
             onClick={() => {
-              console.log(work.title);
               setSelectedWorkIndex(index);
               setShowCard(!showCard);
             }}
@@ -95,7 +97,7 @@ export default function App() {
             )}
           </motion.div>
         ))}
-      </div>
+      </SimpleGrid>
     </div>
   );
 }

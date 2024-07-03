@@ -5,17 +5,12 @@ import styled from 'styled-components';
 import { BoxAnimated } from './Hero';
 
 const TECNOLOGIAS = [
+  'PYTHON',
   'REACT',
   'NODEJS',
   'EXPRESS',
-  'PYTHON',
   'MONGODB',
-  'POSTGRES',
   'HTML/CSS',
-  'STYLED-COMPONENTS',
-  'TAILWIND',
-  'BLOCKCHAIN',
-  'SOLIDITY',
   'UX/UI',
   'DESIGN PATTERNS',
   'CLEAN CODE',
@@ -104,9 +99,6 @@ const Descripcion = () => {
                   {' '}
                   quality software, trying to use the best practices steadily.
                 </TextOrange>{' '}
-                I love cryptocurrencies and blockchain world, and my idea is to
-                improve my development{' '}
-                <TextOrange> web3 applications.</TextOrange>{' '}
               </Text>
 
               <Text fontSize={'lg'} color={'#A11B36'}>

@@ -7,13 +7,12 @@ import { BoxAnimated } from './Hero';
 const TECNOLOGIAS = [
   'PYTHON',
   'REACT',
+  'DOCKER',
+  'AZURE DEVOPS',
   'NODEJS',
-  'EXPRESS',
   'MONGODB',
-  'HTML/CSS',
-  'UX/UI',
-  'DESIGN PATTERNS',
-  'CLEAN CODE',
+  'GIT',
+  'DEVOPS',
 ];
 
 const Circle = styled.div`
@@ -64,7 +63,6 @@ const Descripcion = () => {
     <Stack
       py={[0, 2, 8]}
       id="aboutme"
-      backgroundColor={'#210011'}
       height={['100%', '100vh']}
       justifyContent="center"
       alignItems={'center'}

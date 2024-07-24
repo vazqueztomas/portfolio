@@ -1,8 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
 import { BoxAnimated } from './Hero';
+
 
 const TECNOLOGIAS = [
   'PYTHON',

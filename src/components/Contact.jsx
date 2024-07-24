@@ -1,6 +1,6 @@
-import { Link, Stack, Text } from '@chakra-ui/react'
+import { Link, Stack, Text } from '@chakra-ui/react';
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
-import React from 'react'
+import React from 'react';
 import TextOrange from './common/TextOrange';
 import { BoxAnimated } from './Hero';
 import TitleRemarcado from './TitleRemarcado';
@@ -46,7 +46,7 @@ const Contact = () => {
       </BoxAnimated>
 
     </Stack>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

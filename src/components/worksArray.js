@@ -5,37 +5,35 @@ import pwc from '../assets/images/pwc.png'
 export const works = [
   {
     company: 'Price Waterhouse Coopers',
-    role: 'Python Developer',
-    location: 'Argentina',
+    role: 'Python MLOps Developer',
+    location: 'United States',
     src: pwc,
     period: 'Oct 2023 - Present',
     description:
-      'Code-Witchers is a company created by my mentor and me, with the purpose of venturing into freelance web application development projects.',
-    link: 'https://codewitchers.com',
-    technologies: ['React', 'Node', 'styled-components']
+      'As a developer in MLOps Team im working with programming languages like Python, upgrading my skills levels on Azure Devops and Azure Pipelines using batch and constantly improving my soft skills with a great team.',
+    technologies: ['Python', 'DevOps', 'Azure DevOps', 'Azure Pipeline']
+  },
+  {
+    company: 'Bonsai Films',
+    role: 'Backend Developer',
+    location: 'Chile',
+    period: 'Aug 2022 - Aug 2023',
+    src: bonsai,
+    description:
+      'BonsaiFilms is a project for a company in Chile, where we developed an application from scratch using React for the frontend and Node.js + Express for the backend, with MongoDB as the database. For this project, we decided to implement an MVC architecture.',
+    technologies: ['React', 'Node', 'Express', 'Mongo', 'Firebase']
   },
   {
     company: 'OnEmpleo',
     location: 'Argentina',
     src: onempleo,
-    role: 'Python Developer',
-    period: 'Oct 2023 - Present',
+    role: 'Javascript Fullstack Developer',
+    period: 'Jul 2022 - Aug 2023',
     description:
-      'OnEmpleo is a LinkedIn-style platform where users can find jobs. Within this project, I developed an API using Node.js and Express, storing the data in MongoDB. For the client-side, I used React.',
-    link: 'https://onempleo.com',
+      `* Rebuilt the entire web application from scratch using a Figma prototype as a blueprint.\n* User authentication and accounts systems implemented.\n* Built an API using Node.js and Express, followed by integration of authentication system for the company.\n
+      `,
     technologies:[
       'React', 'NodeJS', 'Express', 'MongoDB', 'Firebase', 'styled-components',]
   },
 
-  {
-    company: 'Bonsai Films',
-    role: 'Python Developer',
-    location: 'Argentina',
-    period: 'Oct 2023 - Present',
-    src: bonsai,
-    description:
-      'BonsaiFilms is a project for a company in Chile, where we developed an application from scratch using React for the frontend and Node.js + Express for the backend, with MongoDB as the database. For this project, we decided to implement an MVC architecture.',
-    link: 'https://bonsaifilms.cl/',
-    technologies: ['React, Node, Express, Mongo, Firebase for Hosting']
-  },
 ];

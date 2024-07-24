@@ -40,10 +40,12 @@ const Company = styled.span`
   color: #888;
 `;
 
-const Info = styled.div`
+const Info = styled.p`
   font-size: 14px;
   color: #666;
   margin-bottom: 16px;
+    white-space: pre-wrap;
+
   text-align: left;
 `;
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     Heading,
     Box,
@@ -18,7 +18,7 @@ const BoxWithStyle = styled(Box)`
   :hover{
     transform: scale(1.02);
 }
-`
+`;
 
 const CardCrypto = (props) => {
   return (
@@ -104,7 +104,7 @@ const CardCrypto = (props) => {
   </Center>
   </BoxAnimated>
 
-  )
-}
+  );
+};
 
-export default CardCrypto
+export default CardCrypto;

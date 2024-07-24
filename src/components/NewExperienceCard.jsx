@@ -57,13 +57,13 @@ const Skills = styled.div`
 
 const CardContainer = styled.div`
   padding: 16px 0 ;
-`
+`;
 
 const NewExperienceCard = () => {
   return (
     <Card>
       {works.map((work, index) => (
-        <CardContainer>
+        <CardContainer key = {index}>
           <Header>
               <Logo
                 src={work.src}

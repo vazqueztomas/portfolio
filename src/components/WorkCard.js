@@ -1,3 +1,6 @@
+
+/* eslint-disable react/prop-types */
+
 import { AnimateSharedLayout } from 'framer-motion';
 import React, { useState } from 'react';
 import CompactWork from './works/CompactWork';

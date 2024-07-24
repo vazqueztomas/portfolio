@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Stack, Text} from '@chakra-ui/react';
 import './Hero.css';
-import { motion} from "framer-motion";
+import { motion} from 'framer-motion';
 
 export const BoxAnimated = ({children, ...props}) => {
   return (

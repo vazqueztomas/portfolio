@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Text = styled.span`
@@ -9,11 +9,11 @@ const Text = styled.span`
     /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`
+`;
 const TextOrange = ({children}) => {
   return (
     <Text>{children}</Text>
-  )
-}
+  );
+};
 
-export default TextOrange
+export default TextOrange;

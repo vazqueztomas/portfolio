@@ -7,7 +7,7 @@ import TitleRemarcado from './TitleRemarcado';
 
 const Contact = () => {
   return (
-    <Stack background={'#210011;'} justifyContent = {'center'} alignItems = {'center'} color = '#FFA475' padding = {[3, 0, 0]}>
+    <Stack justifyContent = {'center'} alignItems = {'center'} color = '#FFA475' padding = {[3, 0, 0]}>
       <BoxAnimated>
 
       <Stack color = {'#A11B36'} justify = 'center' align={'center'}>

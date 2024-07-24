@@ -5,20 +5,14 @@ import styled from 'styled-components';
 import { BoxAnimated } from './Hero';
 
 const TECNOLOGIAS = [
-  'REACT',
-  'NODEJS',
-  'EXPRESS',
   'PYTHON',
+  'REACT',
+  'DOCKER',
+  'AZURE DEVOPS',
+  'NODEJS',
   'MONGODB',
-  'POSTGRES',
-  'HTML/CSS',
-  'STYLED-COMPONENTS',
-  'TAILWIND',
-  'BLOCKCHAIN',
-  'SOLIDITY',
-  'UX/UI',
-  'DESIGN PATTERNS',
-  'CLEAN CODE',
+  'GIT',
+  'DEVOPS',
 ];
 
 const Circle = styled.div`
@@ -69,7 +63,6 @@ const Descripcion = () => {
     <Stack
       py={[0, 2, 8]}
       id="aboutme"
-      backgroundColor={'#210011'}
       height={['100%', '100vh']}
       justifyContent="center"
       alignItems={'center'}
@@ -104,9 +97,6 @@ const Descripcion = () => {
                   {' '}
                   quality software, trying to use the best practices steadily.
                 </TextOrange>{' '}
-                I love cryptocurrencies and blockchain world, and my idea is to
-                improve my development{' '}
-                <TextOrange> web3 applications.</TextOrange>{' '}
               </Text>
 
               <Text fontSize={'lg'} color={'#A11B36'}>

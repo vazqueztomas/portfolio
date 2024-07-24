@@ -32,7 +32,6 @@ const ContributorsView = () => {
   return (
     <Stack
       color="#FFA475"
-      backgroundColor={'#210011'}
       direction="column"
       id="colabs"
       justifyContent={'center'}

@@ -1,4 +1,7 @@
-import pwc from '../assets/images/pwc.webp';
+import onempleo from '../assets/images/onempleo.png'
+import bonsai from '../assets/images/bonsai.png'
+import pwc from '../assets/images/pwc.png'
+
 export const works = [
   {
     company: 'Price Waterhouse Coopers',
@@ -14,7 +17,7 @@ export const works = [
   {
     company: 'OnEmpleo',
     location: 'Argentina',
-    src: 'https://onempleo.com/assets/logo_OnEmpleo.565f4192.svg',
+    src: onempleo,
     role: 'Python Developer',
     period: 'Oct 2023 - Present',
     description:
@@ -29,7 +32,7 @@ export const works = [
     role: 'Python Developer',
     location: 'Argentina',
     period: 'Oct 2023 - Present',
-    src: 'https://bonsaifilms.cl/wp-content/uploads/2021/08/01-logo.png',
+    src: bonsai,
     description:
       'BonsaiFilms is a project for a company in Chile, where we developed an application from scratch using React for the frontend and Node.js + Express for the backend, with MongoDB as the database. For this project, we decided to implement an MVC architecture.',
     link: 'https://bonsaifilms.cl/',

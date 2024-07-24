@@ -17,19 +17,8 @@ const Header = styled.div`
   align-items: center;
   margin-bottom: 16px;
 `;
-const LogoContainer = styled.div`
-  width: 40px;
-  height: 40px;
-  margin-right: 16px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
 const Logo = styled.img`
-  max-width: 100%;
-  max-height: 100%;
   object-fit: contain; /* Asegura que la imagen se ajuste sin perder su aspecto */
 `;
 
@@ -37,6 +26,7 @@ const Title = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin: 0 16px;
 `;
 
 const Role = styled.h3`
@@ -59,42 +49,45 @@ const Info = styled.div`
 
 const Skills = styled.div`
   font-size: 14px;
-  color: #555;
+  color: #999;
+  margin :0 8px 0 0;
 `;
+
+const CardContainer = styled.div`
+  padding: 16px 0 ;
+`
 
 const NewExperienceCard = () => {
   return (
     <Card>
       {works.map((work, index) => (
-        <div>
+        <CardContainer>
           <Header>
-            <LogoContainer>
               <Logo
                 src={work.src}
                 alt="Company logo"
                 style={{
                   height: '50px',
                   objectFit:
-                    'cover' /* Esto asegura que la imagen mantenga su proporción y se recorte si es necesario */,
+                    'cover' ,
                 }}
               />
-            </LogoContainer>
             <Title>
-              <Role style={{ fontWeight: 'bold' }}>
+              <Role>
                 {work.company} - {work.role}
               </Role>
-              <Company style={{ color: 'gray' }}>{work.period}</Company>
+              <Company >{work.period}</Company>
               <Company>{work.location}</Company>
             </Title>
           </Header>
-          <Info className="description" style={{ padding: '15px' }}>
-            {work.description}
-          </Info>
           <div
             style={{
               display: 'flex',
               flexDirection: 'row',
               fontWeight: 'bold',
+              margin: 0,
+              padding: 0,
+              alignItems: 'center',
             }}
           >
             {work.technologies.map((tech, index) => (
@@ -103,7 +96,11 @@ const NewExperienceCard = () => {
               </Skills>
             ))}
           </div>
-        </div>
+          <Info>
+            {work.description}
+          </Info>
+         
+        </CardContainer>
       ))}
     </Card>
   );

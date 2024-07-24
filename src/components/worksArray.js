@@ -10,7 +10,7 @@ export const works = [
     src: pwc,
     period: 'Oct 2023 - Present',
     description:
-      'As a developer in MLOps Team im working with programming languages like Python, upgrading my skills levels on Azure Devops and Azure Pipelines using batch and constantly improving my soft skills with a great team.',
+      'As a developer in MLOps Team im working with programming languages like Python, upgrading my skills levels on DevOps side and Azure Pipelines, using tools like Docker and Kubernetes.',
     technologies: ['Python', 'DevOps', 'Azure DevOps', 'Azure Pipeline']
   },
   {

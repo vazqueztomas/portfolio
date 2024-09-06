@@ -1,110 +1,79 @@
 import React from 'react';
 import { works } from './worksArray';
 import styled from 'styled-components';
-
-const Card = styled.div`
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  max-width: 75ch;
-`;
-
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-`;
+import { Box, Text } from '@chakra-ui/react';
 
 const Logo = styled.img`
-  object-fit: contain; /* Asegura que la imagen se ajuste sin perder su aspecto */
+  object-fit: contain;
 `;
-
-const Title = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 0 16px;
-`;
-
-const Role = styled.h3`
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-`;
-
-const Company = styled.span`
-  font-size: 14px;
-  color: #888;
-`;
-
-const Info = styled.p`
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 16px;
-    white-space: pre-wrap;
-
-  text-align: left;
-`;
-
-const Skills = styled.div`
-  font-size: 14px;
-  color: #999;
-  margin :0 8px 0 0;
-`;
-
-const CardContainer = styled.div`
-  padding: 12px 0 ;
-`
 
 const NewExperienceCard = () => {
   return (
-    <Card>
+    <Box
+      border="1px solid #ddd"
+      borderRadius="8px"
+      padding="16px"
+      fontFamily="Arial, sans-serif"
+      display="flex"
+      flexDirection="column"
+      maxWidth="75ch"
+    >
       {works.map((work, index) => (
-        <CardContainer>
-          <Header>
-              <Logo
-                src={work.src}
-                alt="Company logo"
-                style={{
-                  height: '50px',
-                  objectFit:
-                    'cover' ,
-                }}
-              />
-            <Title>
-              <Role>
+        <Box p="12px">
+          <Box display="flex" alignItems="center" mb="16px">
+            <Logo
+              src={work.src}
+              alt="Company logo"
+              style={{
+                height: '50px',
+                objectFit: 'cover',
+              }}
+            />
+            <Box display='flex' flexDirection='column'
+            textAlign='left' m='0 16px'>
+              <Text m='0' fontSize='18px' color='#333'>
                 {work.company} - {work.role}
-              </Role>
-              <Company >{work.period}</Company>
-              <Company>{work.location}</Company>
-            </Title>
-          </Header>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              fontWeight: 'bold',
-              margin: 0,
-              padding: 0,
-              alignItems: 'center',
-            }}
+              </Text>
+              <Text as="span" fontSize="14px" color="#888">
+                {work.period}
+              </Text>
+              <Text as="span" fontSize="14px" color="#888">
+                {work.location}
+              </Text>
+            </Box>
+          </Box>
+          <Box
+            display="flex"
+            flexDirection="row"
+            alignItems="center"
+            fontWeight="bold"
+            m="0"
+            p="0"
           >
             {work.technologies.map((tech, index) => (
-              <Skills className="skills" key={index}>
+              <Box
+                fontSize="14px"
+                color="#999"
+                m="0 8px 0 0"
+                className="skills"
+                key={index}
+              >
                 {tech} -
-              </Skills>
+              </Box>
             ))}
-          </div>
-          <Info>
+          </Box>
+          <Text
+            as="p"
+            fontSize="14px"
+            color="#666"
+            whiteSpace="pre-wrap"
+            align="left"
+          >
             {work.description}
-          </Info>
-         
-        </CardContainer>
+          </Text>
+        </Box>
       ))}
-    </Card>
+    </Box>
   );
 };
 

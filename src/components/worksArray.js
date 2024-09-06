@@ -5,16 +5,17 @@ import pwc from '../assets/images/pwc.png';
 export const works = [
   {
     company: 'Price Waterhouse Coopers',
-    role: 'Python MLOps Developer',
+    role: 'Python MLOps - DevOps Engineer',
     location: 'United States',
     src: pwc,
     period: 'Oct 2023 - Present',
-    description: `* Developed Continuous Integration and Continuous Development pipelines for Python Packages\n* Developed Python Packages as a Docker Images\n* Worked on Deployments of Python Packages codebases.\n* Ensure the quality of the codebase by implementing unit tests and integration tests. \n* Worked on the development of a Python Package for a Auditory System. \n *Ensure quality code appliyng pre-commit configurations in local and CI/CD pipelines.
+    description: `* Developed Continuous Integration and Continuous Deployment pipelines for Python Packages\n* Developed Python Packages as a Docker Images\n* Worked on Deployments of Python Packages codebases.\n* Ensure the quality of the codebase by implementing unit tests and integration tests. \n* Worked on the development of a Python Package for a Auditory System. \n *Ensure quality code appliyng pre-commit configurations in local and CI/CD pipelines.
       `,
     technologies: [
-      'Python Software Developing',
-      'DevOps',
-      'Azure DevOps',
+      'Python',
+      'Docker',
+      'Continuous Integration',
+      'Continuous Deployment',
       'Azure Pipelines',
     ],
   },

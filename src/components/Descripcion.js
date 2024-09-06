@@ -3,56 +3,7 @@ import React from 'react';
 import TitleRemarcado from './TitleRemarcado';
 import styled from 'styled-components';
 import { BoxAnimated } from './Hero';
-
-const TECNOLOGIAS = [
-  'PYTHON',
-  'REACT',
-  'DOCKER',
-  'AZURE DEVOPS',
-  'NODEJS',
-  'MONGODB',
-  'GIT',
-  'DEVOPS',
-];
-
-const Circle = styled.div`
-  width: ${props => props.size};
-  height: ${props => props.size};
-  border-radius: 50%;
-  left: ${props => props.left};
-  background-color: #a11b3650;
-  box-shadow: 0 0 60px 0 #a11b36;
-  -webkit-filter: blur(35px);
-  top: ${props => props.top};
-
-  @media (max-width: 568px) {
-    display: none;
-  }
-
-  -webkit-animation-name: prop-600;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-
-  position: inherit;
-  :nth-child(2) {
-    position: absolute;
-    -webkit-animation-name: prop-600;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-  }
-
-  @keyframes prop-600 {
-    0% {
-      -webkit-transform: translateX(0px);
-    }
-    50% {
-      -webkit-transform: translateX(20%);
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-    }
-  }
-`;
+import { TECHNOLOGIES } from './common/techs.js'
 
 const TextOrange = styled.span`
   color: #e64017;
@@ -70,7 +21,6 @@ const Descripcion = () => {
     >
       <BoxAnimated>
         <Stack p={[2, 2, 6]} className="border-card-aboutme" w={'100%'}>
-          <Circle size={'170px'} left={'-90%'} top={'400px'} />
 
           <Stack textAlign={'center'} justify="center" align="center">
             <TitleRemarcado contenido={'About me'}></TitleRemarcado>
@@ -110,7 +60,7 @@ const Descripcion = () => {
                 textAlign="center"
                 justifyContent={['center']}
               >
-                {TECNOLOGIAS.map((tech, id) => (
+                {TECHNOLOGIES.map((tech, id) => (
                   <Text
                     key={id}
                     backgroundColor={'#A11B36'}

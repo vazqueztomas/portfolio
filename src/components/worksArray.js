@@ -1,6 +1,6 @@
-import onempleo from '../assets/images/onempleo.png'
-import bonsai from '../assets/images/bonsai.png'
-import pwc from '../assets/images/pwc.png'
+import onempleo from '../assets/images/onempleo.png';
+import bonsai from '../assets/images/bonsai.png';
+import pwc from '../assets/images/pwc.png';
 
 export const works = [
   {
@@ -9,9 +9,14 @@ export const works = [
     location: 'United States',
     src: pwc,
     period: 'Oct 2023 - Present',
-    description:
-      'As a developer in MLOps Team im working with programming languages like Python, upgrading my skills levels on DevOps side and Azure Pipelines, using tools like Docker and Kubernetes.',
-    technologies: ['Python', 'DevOps', 'Azure DevOps', 'Azure Pipeline']
+    description: `* Developed Continuous Integration and Continuous Development pipelines for Python Packages\n* Developed Python Packages as a Docker Images\n* Worked on Deployments of Python Packages codebases.\n* Ensure the quality of the codebase by implementing unit tests and integration tests. \n* Worked on the development of a Python Package for a Auditory System. \n *Ensure quality code appliyng pre-commit configurations in local and CI/CD pipelines.
+      `,
+    technologies: [
+      'Python Software Developing',
+      'DevOps',
+      'Azure DevOps',
+      'Azure Pipelines',
+    ],
   },
   {
     company: 'Bonsai Films',
@@ -21,7 +26,7 @@ export const works = [
     src: bonsai,
     description:
       'BonsaiFilms is a project for a company in Chile, where we developed an application from scratch using React for the frontend and Node.js + Express for the backend, with MongoDB as the database. For this project, we decided to implement an MVC architecture.',
-    technologies: ['React', 'Node', 'Express', 'Mongo', 'Firebase']
+    technologies: ['React', 'Node', 'Express', 'Mongo', 'Firebase'],
   },
   {
     company: 'OnEmpleo',
@@ -29,11 +34,15 @@ export const works = [
     src: onempleo,
     role: 'Javascript Fullstack Developer',
     period: 'Jul 2022 - Aug 2023',
-    description:
-      `* Rebuilt the entire web application from scratch using a Figma prototype as a blueprint.\n* User authentication and accounts systems implemented.\n* Built an API using Node.js and Express, followed by integration of authentication system for the company.\n
+    description: `* Rebuilt the entire web application from scratch using a Figma prototype as a blueprint.\n* User authentication and accounts systems implemented.\n* Built an API using Node.js and Express, followed by integration of authentication system for the company.\n
       `,
-    technologies:[
-      'React', 'NodeJS', 'Express', 'MongoDB', 'Firebase', 'styled-components',]
+    technologies: [
+      'React',
+      'NodeJS',
+      'Express',
+      'MongoDB',
+      'Firebase',
+      'styled-components',
+    ],
   },
-
 ];

@@ -56,7 +56,7 @@ const Skills = styled.div`
 `;
 
 const CardContainer = styled.div`
-  padding: 16px 0 ;
+  padding: 12px 0 ;
 `
 
 const NewExperienceCard = () => {
@@ -94,7 +94,7 @@ const NewExperienceCard = () => {
           >
             {work.technologies.map((tech, index) => (
               <Skills className="skills" key={index}>
-                {tech}
+                {tech} -
               </Skills>
             ))}
           </div>

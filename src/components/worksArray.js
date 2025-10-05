@@ -14,9 +14,10 @@ export const works = [
     technologies: [
       'Python',
       'Docker',
-      'Continuous Integration',
-      'Continuous Deployment',
-      'Azure Pipelines',
+      'Kubernetes',
+      'CI/CD',
+      'Observability and Monitoring',
+      'Azure Services',
     ],
   },
   {

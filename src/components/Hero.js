@@ -29,7 +29,7 @@ const Hero = () => {
       <BoxAnimated>
       <Stack id="hero-text" justifyContent={['center']} alignItems={'center'} pt={'120px'}>
         <Text fontSize={['4xl','5xl','6xl', '95px']} as = 'h1' px={[2, 1, 0]}>Tomas Vazquez</Text>
-        <Text fontSize={['2xl','3xl','4xl', '48px']} as = 'h6' px={[2, 1, 0]}>Python developer</Text>
+        <Text fontSize={['2xl','3xl','4xl', '48px']} as = 'h6' px={[2, 1, 0]}>MLOps - Python developer</Text>
       </Stack>
       </BoxAnimated>
       

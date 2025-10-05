@@ -1,6 +1,5 @@
 import { Link, Stack, Text } from '@chakra-ui/react'
-import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
-import React from 'react'
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import TextOrange from './common/TextOrange';
 import { BoxAnimated } from './Hero';
 import TitleRemarcado from './TitleRemarcado';
@@ -20,9 +19,6 @@ const Contact = () => {
 
         <Stack direction = 'column' textAlign={'center'} justify = 'center' align={'center'} py = {[4, 0, 0]}>
           <Stack direction = 'row' gap = {4}>
-            <Link href = 'https://twitter.com/cabjquez' isExternal>
-              <Twitter sx = {{fontSize: 40}}/>
-            </Link>
             <Link href = 'https://github.com/vazqueztomas' isExternal>
               <GitHub sx = {{fontSize: 40}}/>
             </Link>

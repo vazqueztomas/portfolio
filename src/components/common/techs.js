@@ -1,11 +1,10 @@
 export const TECHNOLOGIES = [
     'PYTHON',
-    'REACT',
     'DOCKER',
-    'PIPELINES',
-    'NODEJS',
+    'CI/CD PIPELINES',
     'MONGODB',
     'GIT',
     'DEVOPS',
+    'AZURE STACK'
   ];
 

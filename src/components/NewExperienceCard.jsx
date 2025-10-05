@@ -19,7 +19,7 @@ const Header = styled.div`
 `;
 
 const Logo = styled.img`
-  object-fit: contain; /* Asegura que la imagen se ajuste sin perder su aspecto */
+  object-fit: contain;
 `;
 
 const Title = styled.div`

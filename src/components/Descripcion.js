@@ -38,9 +38,9 @@ const Descripcion = () => {
               mx={[2, 2, 6]}
             >
               <Text fontSize={['sm', 'lg']} color={'#A11B36'}>
-                Hi! My name is Tomás Vazquez. I'm a software developer, I use
+                Hi! My name is Tomás Vazquez. I'm MLOps and Python developer, I use
                 technologies like{' '}
-                <TextOrange>React, Node, Mongo or Python. </TextOrange>I studied
+                <TextOrange>Python, Databricks, CI/CD and Azure Services. </TextOrange>I studied
                 2 years in <TextOrange>University of Luján. </TextOrange>
                 I'm a apassionate about technology and the desing of{' '}
                 <TextOrange>

@@ -2,6 +2,7 @@ import React from 'react';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
+import Reel from './components/Reel';
 import Descripcion from './components/Descripcion';
 import Works from './components/Works';
 import Contact from './components/Contact';
@@ -25,6 +26,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Nav />
+      <Reel />
       <Hero />
       <Descripcion />
       <Works />

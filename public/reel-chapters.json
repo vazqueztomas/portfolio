@@ -1,0 +1,37 @@
+[
+	{
+		"label": "BOOT",
+		"start": 0,
+		"end": 3.5
+	},
+	{
+		"label": "NAME",
+		"start": 3.5,
+		"end": 7.5
+	},
+	{
+		"label": "PLATFORM",
+		"start": 7.5,
+		"end": 12.5
+	},
+	{
+		"label": "PIPELINE",
+		"start": 12.5,
+		"end": 17
+	},
+	{
+		"label": "GITHUB",
+		"start": 17,
+		"end": 22
+	},
+	{
+		"label": "ROUTE",
+		"start": 22,
+		"end": 26
+	},
+	{
+		"label": "FIN",
+		"start": 26,
+		"end": 30
+	}
+]

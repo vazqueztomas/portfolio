@@ -1,23 +1,38 @@
-import React from 'react';
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
 import TitleRemarcado from './TitleRemarcado';
-import './Works.css';
 import NewExperienceCard from './NewExperienceCard';
 
-export default function App() {
+const SectionWrapper = styled.div`
+  padding: 100px 0;
+  background: #0c0b14;
 
-  return (
-    <div
-      style={{
-        textAlign: 'center',
-        padding: '4rem 0',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: '16px',
-      }}
-    >
-      <TitleRemarcado contenido="EXPERIENCE" />
+  @media (max-width: 768px) { padding: 72px 0; }
+`;
+
+const Container = styled.section`
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @media (max-width: 768px) { padding: 0 20px; }
+`;
+
+const Works = () => (
+  <SectionWrapper id="experience">
+    <Container>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <TitleRemarcado contenido="Experience" />
+      </motion.div>
       <NewExperienceCard />
-    </div>
-  );
-}
+    </Container>
+  </SectionWrapper>
+);
+
+export default Works;

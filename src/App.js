@@ -1,17 +1,35 @@
 import React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Descripcion from './components/Descripcion';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+const theme = extendTheme({
+  styles: {
+    global: {
+      'html, body': {
+        bg: '#09080f',
+        color: '#f0eeff',
+        fontFamily: "'Montserrat', sans-serif",
+        overflowX: 'hidden',
+        scrollBehavior: 'smooth',
+      },
+    },
+  },
+});
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      <Nav />
       <Hero />
-      <Descripcion title="About me "></Descripcion>
+      <Descripcion />
       <Works />
       <Contact />
+      <Footer />
     </ChakraProvider>
   );
 }

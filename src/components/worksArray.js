@@ -1,50 +1,61 @@
-import onempleo from '../assets/images/onempleo.png';
 import bonsai from '../assets/images/bonsai.png';
 import pwc from '../assets/images/pwc.png';
+import onempleo from '../assets/images/onempleo.png';
 
 export const works = [
   {
-    company: 'Price Waterhouse Coopers',
-    role: 'Python MLOps - DevOps Engineer',
+    company: 'PricewaterhouseCoopers',
+    role: 'DevOps & Platform Engineer',
     location: 'United States',
     src: pwc,
-    period: 'Oct 2023 - Present',
-    description: `* Developed Continuous Integration and Continuous Deployment pipelines for Python Packages\n* Developed Python Packages as a Docker Images\n* Worked on Deployments of Python Packages codebases.\n* Ensure the quality of the codebase by implementing unit tests and integration tests. \n* Worked on the development of a Python Package for a Auditory System. \n *Ensure quality code appliyng pre-commit configurations in local and CI/CD pipelines.
-      `,
+    useLogo: true,
+    period: 'Oct 2023 — Present',
+    description: [
+      'Managed application deployments across 15+ repos via GitHub Actions and Azure Pipelines',
+      'Operated Kubernetes clusters through Rafay: service deployments, troubleshooting, and incident response',
+      'Administered HashiCorp Vault: secret management, policy changes, and environment rotations',
+      'Maintained Azure-native infrastructure: Functions, Service Bus, CosmosDB, Log Analytics',
+      'Built DataDog observability coverage: dashboards, monitors, log-based production troubleshooting',
+      'Ensured code quality via pre-commit hooks and CI/CD-integrated test suites (unit + integration)',
+      'Collaborated with Microsoft on LLM and agentic tooling (AutoGen, RAG) for audit-domain applications',
+    ],
     technologies: [
-      'Python',
-      'Docker',
+      'GitHub Actions',
+      'Azure Pipelines',
       'Kubernetes',
-      'CI/CD',
-      'Observability and Monitoring',
-      'Azure Services',
+      'HashiCorp Vault',
+      'DataDog',
+      'Azure',
+      'Docker',
+      'Python',
     ],
   },
   {
     company: 'Bonsai Films',
-    role: 'Backend Developer',
+    role: 'Software Developer',
     location: 'Chile',
-    period: 'Aug 2022 - Aug 2023',
     src: bonsai,
-    description:
-      'BonsaiFilms is a project for a company in Chile, where we developed an application from scratch using React for the frontend and Node.js + Express for the backend, with MongoDB as the database. For this project, we decided to implement an MVC architecture.',
-    technologies: ['React', 'Node', 'Express', 'Mongo', 'Firebase'],
+    useLogo: true,
+    period: 'Aug 2022 — Aug 2023',
+    description: [
+      'Developed a REST API using Node.js, Express, and Firebase to power the core application',
+      'Implemented JWT-based authentication systems for user management',
+      'Built custom frontend logic and algorithms using React',
+    ],
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
   },
   {
     company: 'OnEmpleo',
+    role: 'Software Developer',
     location: 'Argentina',
     src: onempleo,
-    role: 'Javascript Fullstack Developer',
-    period: 'Jul 2022 - Aug 2023',
-    description: `* Rebuilt the entire web application from scratch using a Figma prototype as a blueprint.\n* User authentication and accounts systems implemented.\n* Built an API using Node.js and Express, followed by integration of authentication system for the company.\n
-      `,
-    technologies: [
-      'React',
-      'NodeJS',
-      'Express',
-      'MongoDB',
-      'Firebase',
-      'styled-components',
+    useLogo: true,
+    period: 'Jul 2022 — Jan 2023',
+    description: [
+      'Rebuilt the entire web application from scratch using a Figma prototype as blueprint',
+      'Built a Node.js/Express API with integrated authentication system',
+      'Implemented user authentication and account management',
     ],
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
   },
 ];

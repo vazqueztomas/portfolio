@@ -1,10 +1,14 @@
 export const TECHNOLOGIES = [
-    'PYTHON',
-    'DOCKER',
-    'CI/CD PIPELINES',
-    'MONGODB',
-    'GIT',
-    'DEVOPS',
-    'AZURE STACK'
-  ];
-
+  'Python',
+  'GitHub Actions',
+  'Azure Pipelines',
+  'Kubernetes',
+  'HashiCorp Vault',
+  'Docker',
+  'DataDog',
+  'Azure Functions',
+  'CosmosDB',
+  'Azure Service Bus',
+  'Bash',
+  'Git',
+];
